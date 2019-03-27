@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class=" js flexbox flexboxlegacy rgba multiplebgs backgroundsize borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" async="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/recaptcha__en.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/superfish.min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery.navgoco.min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/owl.carousel.min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery.form.min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery.validate.min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery.ticker.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/site.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/masonry.pkgd.min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/imagesloaded.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery.zaccordion.min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/matchMedia.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/matchMedia.addListener.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/enquire.min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery.matchHeight-min.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/waypoints.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/waypoints-sticky.js.download"></script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/ca-pub-9915705992307354.js.download"></script><script id="facebook-jssdk" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/sdk.js.download"></script><script async="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/analytics.js.download"></script><script async="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/adsbygoogle.js.download"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-9915705992307354",
+enable_page_level_ads: true
+});
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="ZQxjYe_icejIDMQAn3EVKsD2Cu-Bov95GwZn-9_hM5A">
+<link rel="pingback" href="http://www.mynotescode.com/xmlrpc.php">
+<title>Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL</title>
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL">
+<meta property="og:description" content="Setelah sebelumnya saya sudah membuat catatan mengenai Cara Membuat Laporan PDF dengan Codeigniter dan HTML2Pdf, kali ini saya ingin berbagi cara membuat laporan pdf hanya dengan PHP dan MySQL (tanpa menggunakan framework Codeigniter). Silahkan ikuti langkah-langkahnya">
+<meta property="og:image" content="http://www.mynotescode.com/wp-content/uploads/2016/09/PDF.png">
+<meta property="og:url" content="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/">
+<meta property="og:site_name" content="My Notes Code">
+<meta property="article:publisher" content="www.facebook.com/mynotescode">
+<meta property="fb:app_id" content="1190550297688933">
+<meta property="article:published_time" content="2016-09-22T12:21:34+00:00">
+<meta property="article:modified_time" content="2017-10-27T09:27:44+00:00">
+<meta property="og:updated_time" content="2017-10-27T09:27:44+00:00">
+
+
+<meta property="og:image:width" content="400">
+<meta property="og:image:height" content="300">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL">
+<meta name="twitter:description" content="Setelah sebelumnya saya sudah membuat catatan mengenai Cara Membuat Laporan PDF dengan Codeigniter dan HTML2Pdf, kali ini saya ingin berbagi cara membuat laporan pdf hanya dengan PHP dan MySQL (tanpa menggunakan framework Codeigniter). Silahkan ikuti langkah-langkahnya">
+<meta name="twitter:image" content="http://www.mynotescode.com/wp-content/uploads/2016/09/PDF.png">
+
+
+<meta name="description" content="Tutorial step by step mengenai cara mudah untuk membuat Laporan PDF dengan menggunakan PHP, plugin HTML2PDF, dan Database MySQL">
+<link rel="canonical" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/">
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/www.mynotescode.com\/","name":"My Notes Code","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.mynotescode.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","url":"http:\/\/www.mynotescode.com\/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql\/","sameAs":["https:\/\/www.facebook.com\/mynotescode","https:\/\/twitter.com\/code_notes"],"@id":"#organization","name":"My Notes Code","logo":"http:\/\/www.mynotescode.com\/wp-content\/uploads\/2016\/10\/cropped-My-Notes-Code-Logo.png"}</script>
+
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="My Notes Code » Feed" href="http://www.mynotescode.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="My Notes Code » Comments Feed" href="http://www.mynotescode.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="My Notes Code » Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL Comments Feed" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/feed/">
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.mynotescode.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.7"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="mashsb-styles-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/mashsb.min.css" type="text/css" media="all">
+<style id="mashsb-styles-inline-css" type="text/css">
+.mashsb-count {color:#cccccc;}@media only screen and (min-width:568px){.mashsb-buttons a {min-width: 177px;}}
+</style>
+<link rel="stylesheet" id="ad-mag-lite-bootstrap-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-font-awesome-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-superfish-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/superfish.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-megafish-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/megafish.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-navgoco-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery.navgoco.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-owl.carousel-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-owl.theme-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-bootstrap-slider-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/bootstrap-slider.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-style-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-mag-lite-extra-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/extra.css" type="text/css" media="all">
+<link rel="stylesheet" id="enlighter-local-css" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/EnlighterJS.min.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var ad_mag_lite_front_variable = {"ajax":{"url":"http:\/\/www.mynotescode.com\/wp-admin\/admin-ajax.php"},"template":{"post_id":493}};
+/* ]]> */
+</script><link rel="preload" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/integrator.js.download" as="script"><script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/integrator.js.download"></script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery.js.download"></script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/jquery-migrate.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var mashsb = {"shares":"15","round_shares":"1","animate_shares":"0","dynamic_buttons":"0","share_url":"http:\/\/www.mynotescode.com\/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql\/","title":"Cara+Mudah+Membuat+Laporan+PDF+dengan+PHP+dan+MySQL","image":"http:\/\/www.mynotescode.com\/wp-content\/uploads\/2016\/09\/PDF.png","desc":"Setelah sebelumnya saya sudah membuat catatan mengenai Cara Membuat Laporan PDF dengan Codeigniter dan HTML2Pdf, kali ini saya ingin berbagi cara membuat laporan pdf hanya dengan PHP dan MySQL (tanpa menggunakan framework Codeigniter). Silahkan ikuti\u00a0langkah-langkahnya \u2026","hashtag":"","subscribe":"content","subscribe_url":"","activestatus":"1","singular":"1","twitter_popup":"1","refresh":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/mashsb.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajax_tptn_tracker = {"ajax_url":"http:\/\/www.mynotescode.com\/wp-admin\/admin-ajax.php","top_ten_nonce":"f976f4871a","top_ten_id":"493","top_ten_blog_id":"1","activate_counter":"11","tptn_rnd":"833461724"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/top-10-tracker.js.download"></script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/mootools-core-yc.js.download"></script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/EnlighterJS.min.js.download"></script>
+<link rel="https://api.w.org/" href="http://www.mynotescode.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.mynotescode.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.mynotescode.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.7.7">
+<link rel="shortlink" href="http://www.mynotescode.com/?p=493">
+<link rel="alternate" type="application/json+oembed" href="http://www.mynotescode.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.mynotescode.com%2Fcara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://www.mynotescode.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.mynotescode.com%2Fcara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql%2F&amp;format=xml">
+<style type="text/css">.widget_widget_tptn_pop{padding: 20px;background:#1C5E1C !important;border-bottom:none !important;}
+.widget_widget_tptn_pop .widget-title{color:#fff;border-bottom:none !important;margin-bottom: 0 !important;}
+.widget_widget_tptn_pop a{color:#fff;}
+.widget_widget_tptn_pop a:hover{color:#8BEA8B;}
+.widget_widget_tptn_pop ul li{margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #638E63;}
+.widget_widget_tptn_pop .tptn_list_count{color: #fff !important}</style><script type="text/javascript">
+	window._wp_rp_static_base_url = 'https://wprp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "http://www.mynotescode.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.6.4';
+	window._wp_rp_post_id = '493';
+	window._wp_rp_num_rel_posts = '4';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'Cara+Mudah+Membuat+Laporan+PDF+dengan+PHP+dan+MySQL';
+	window._wp_rp_post_tags = ['html2pdf', 'php', 'laporan+pdf', 'report+pdf', 'mysql', 'php', 'tabl', 'ni', 'folder', 'cara', 'kali', 'ke', 'php', 'dan', 'yang', 'nama', 'plugin', 'li', 'mysql', 'pdf', '2'];
+	window._wp_rp_promoted_content = true;
+</script>
+<link rel="stylesheet" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/vertical.css">
+<!--[if lt IE 9]>
+            <link rel="stylesheet" href="http://www.mynotescode.com/wp-content/themes/ad-mag-lite/css/ie.css" type="text/css" media="all" />
+            <![endif]-->
+<!--[if IE 9]>
+                <link rel="stylesheet" href="http://www.mynotescode.com/wp-content/themes/ad-mag-lite/css/ie9.css" type="text/css" media="all" />
+            <![endif]--><style id="kopa-user-custom-css" type="text/css">.topbar{background: white;padding: 15px;margin-bottom: 10px;margin-left: 0;margin-right: 0;}
+.entry-desc{color: #4D4D4D !important;font-size: 15px !important;line-height: 30px;}
+.entry-desc a{font-weight: bold;text-decoration: underline !important;}
+.entry-desc ol{counter-reset: foo;display: table;}
+.entry-desc ol > li{counter-increment: foo;display: table-row;}
+.entry-desc ol > li::before{content: counter(foo) ".";display: table-cell;text-align: right;}
+.tptn_thumb{float: left;margin-right: 5px;}
+.widget-area-1,.widget-area-1 .widget,.widget-area-3,.widget-area-3 .widget,.widget-area-4,.widget-area-4 .widget{background: transparent !important; border: 0 !important}
+.wp-post-image{max-width: 400px !important;}
+.entry-thumb{background: none !important;text-align: center !important;}
+.widget_widget_tptn_pop{
+	background: white !important;
+}
+.widget_widget_tptn_pop li a{
+	color: #4D4D4D !important
+}
+.widget_widget_tptn_pop li a:hover{
+	color: #F15C22 !important
+}
+.widget_widget_tptn_pop .widget-title,
+.widget_categories .widget-title,
+.widget_recent_entries .widget-title,
+.widget_archive .widget-title{
+	/*border-bottom: 1px solid #ccc;
+	color: #F15C22;*/
+	text-transform:uppercase;
+	padding:12px 20px;
+	border-bottom:2px solid #dfdfdf;
+	position:relative;
+}
+.widget_widget_tptn_pop .widget-title:before,
+.widget_categories .widget-title:before,
+.widget_recent_entries .widget-title:before,
+.widget_archive .widget-title:before{
+	content:'';
+	position:absolute;
+	top:7px;
+	left:0;
+	width:4px;
+	height:36px;
+	background:#f15c22;
+}
+.widget_widget_tptn_pop, .widget_categories, .widget_archive, .widget_recent_entries{
+	padding: 0 !important;
+}
+.widget_widget_tptn_pop h3{
+	margin-bottom: 5px !important;
+	color: black !important;
+}
+.widget_widget_tptn_pop div{
+border-top: 2px solid #eee !important;
+	padding: 0 20px;
+}
+.widget_widget_tptn_pop li{
+	padding-bottom: 12px;
+	padding-top: 12px;
+	border-bottom: 1px dashed #ccc !important;
+}
+.widget_widget_tptn_pop li .tptn_thumb{
+	margin-right: 10px;
+}
+.widget_categories ul, .widget_recent_entries ul{
+	margin: 0 20px 10px 20px;
+}
+.widget_categories li:before {
+    content: "»"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #f15c22; /* Or a color you prefer */
+}
+.widget_archive select{
+	margin: 0 20px 10px 20px;
+	max-width: 230px;
+}
+.widget_recent_entries li{
+	padding-bottom: 12px;
+	border-bottom: 1px dashed #ccc;
+}
+.adslot_header{
+	display: inline-block;
+	width: 728px;
+	height: 90px;
+}
+.adslot_sidebar{
+	display: block;
+}
+@media (max-width: 970px){
+	.adslot_header, .adslot_sidebar{
+		display: none;
+	}
+}
+.baca{
+position: relative;
+display: inline-block;
+}
+.baca .titlebaca{
+background-color: white;
+position: absolute;
+margin-left: 15px;
+margin-top: -14px;
+padding: 0px 15px;
+}
+.baca ul li a{
+	color: #f15c22 !important;
+	text-decoration: none !important;
+	font-weight: normal;
+}
+.baca .contentbaca{
+border: solid 1px #ddd;
+padding: 20px 20px 0px 20px;
+}</style>
+<style type="text/css">
+div.fs-recaptcha-comments { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-bp-comments { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-login { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-side-login { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-registration { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-bp-registration { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-ms-registration { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-lostpassword { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-wc-checkout { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-jetpack { display:block; clear:both; margin-bottom:1em; }
+.fs-recaptcha-jetpack p { color:#DC3232; }
+</style>
+
+<script type="text/javascript">/* <![CDATA[ */EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"php","theme":"enlighter","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":true,"windowButton":true,"rawcodeDoubleclick":false,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};!function(){var a=function(a){var b="Enlighter Error: ";console.error?console.error(b+a):console.log&&console.log(b+a)};return window.addEvent?"undefined"==typeof EnlighterJS?void a("Javascript Resources not loaded yet!"):"undefined"==typeof EnlighterJS_Config?void a("Configuration not loaded yet!"):void window.addEvent("domready",function(){EnlighterJS.Util.Init(EnlighterJS_Config.selector.block,EnlighterJS_Config.selector.inline,EnlighterJS_Config)}):void a("MooTools Framework not loaded yet!")}();;/* ]]> */</script><link rel="icon" href="http://www.mynotescode.com/wp-content/uploads/2016/10/cropped-My-Notes-Code-Logo-32x32.png" sizes="32x32">
+<link rel="icon" href="http://www.mynotescode.com/wp-content/uploads/2016/10/cropped-My-Notes-Code-Logo-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/cropped-My-Notes-Code-Logo-180x180.png">
+<meta name="msapplication-TileImage" content="http://www.mynotescode.com/wp-content/uploads/2016/10/cropped-My-Notes-Code-Logo-270x270.png">
+<style>#g207{position:fixed!important;position:absolute;top:0;top:expression
+    ((t=document.documentElement.scrollTop?document.documentElement.scrollTop:document
+    .body.scrollTop)+"px");
+    left:0;width:100%;height:100%;background-color:#fff;opacity:0.9;filter:alpha(opacity=90);display:block}#g207 p{opacity:1;filter:none;font:bold 16px Verdana,Arial,sans-serif;text-align:center;margin:20% 0}#g207 p a,#g207 p i{font-size:12px}#g207 ~ *{display:none}</style><noscript>&lt;i id=g207&gt;&lt;p&gt;Please enable JavaScript!&lt;br /&gt;Bitte aktiviere JavaScript!&lt;br /&gt;S'il vous plaît activer JavaScript!&lt;br /&gt;Por favor,activa el JavaScript!&lt;br /&gt;&lt;a href="http://antiblock.org/"&gt;antiblock.org&lt;/a&gt;&lt;/p&gt;&lt;/i&gt;</noscript><script>(function(w,u){var d=w.document,z=typeof u;function g207(){function c(c,i){var e=d.createElement('i'),b=d.body,s=b.style,l=b.childNodes.length;if(typeof i!=z){e.setAttribute('id',i);s.margin=s.padding=0;s.height='100%';l=Math.floor(Math.random()*l)+1}e.innerHTML=c;b.insertBefore(e,b.childNodes[l-1])}function g(i,t){return !t?d.getElementById(i):d.getElementsByTagName(t)};function f(v){if(!g('g207')){c('<p>Harap Matikan AdBlock / Pemblokir Iklan Anda<br/>Agar Saya lebih semangat lagi untuk menulis<br/>dan share tutorial-tutorial yang bermanfaat di blog ini<br/>Terimakasih atas kerjasamanya<br/><br/><A HREF="javascript:history.go(0)"><button><b>Reload di Sini</b></button></A></p>','g207')}};(function(){var a=['Adrectangle','PageLeaderAd','ad-column','advertising2','divAdBox','mochila-column-right-ad-300x250-1','searchAdSenseBox','ad','ads','adsense'],l=a.length,i,s='',e;for(i=0;i<l;i++){if(!g(a[i])){s+='<a id="'+a[i]+'"></a>'}}c(s);l=a.length;for(i=0;i<l;i++){e=g(a[i]);if(e.offsetParent==null||(w.getComputedStyle?d.defaultView.getComputedStyle(e,null).getPropertyValue('display'):e.currentStyle.display
+    )=='none'){return f('#'+a[i])}}}());(function(){var t=g(0,'img'),a=['/adaffiliate_','/adops/ad','/adsales/ad','/adsby.','/adtest.','/ajax/ads/ad','/controller/ads/ad','/pageads/ad','/weather/ads/ad','-728x90-'],i;if(typeof t[0]!=z&&typeof t[0].src!=z){i=new Image();i.onload=function(){this.onload=z;this.onerror=function(){f(this.src)};this.src=t[0].src+'#'+a.join('')};i.src=t[0].src}}());(function(){var o={'http://pagead2.googlesyndication.com/pagead/show_ads.js':'google_ad_client','http://js.adscale.de/getads.js':'adscale_slot_id','http://get.mirando.de/mirando.js':'adPlaceId'},S=g(0,'script'),l=S.length-1,n,r,i,v,s;d.write=null;for(i=l;i>=0;--i){s=S[i];if(typeof o[s.src]!=z){n=d.createElement('script');n.type='text/javascript';n.src=s.src;v=o[s.src];w[v]=u;r=S[0];n.onload=n.onreadystatechange=function(){if(typeof w[v]==z&&(!this.readyState||this.readyState==="loaded"||this.readyState==="complete")){n.onload=n.onreadystatechange=null;r.parentNode.removeChild(n);w[v]=null}};r.parentNode.insertBefore(n,r);setTimeout(function(){if(w[v]!==null){f(n.src)}},2000);break}}}())}if(d.addEventListener){w.addEventListener('load',g207,false)}else{w.attachEvent('onload',g207)}})(window);
+//<![CDATA[
+var noUC = navigator.userAgent;
+var redirect = noUC.search("UCBrowser");
+if(redirect>1) {
+var axefo = window.location.assign("googlechrome://navigate?url="+ window.location.href);
+var activity = axefo;document.getElementsByTagName('head')[0].appendChild(activity);}
+//]]>
+var find = navigator.userAgent;
+var redirect = find.search("dolphin");
+if(redirect>1) {
+var OpenChrome = window.location.assign("googlechrome://navigate?url="+ window.location.href);
+var activity = OpenChrome;document.getElementsByTagName('head')[0].appendChild(activity);
+}
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86489280-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/platform.js.download" gapi_processed="true"></script>
+<script type="text/javascript" async="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/request"></script></head>
+<body class="post-template-default single single-post postid-493 single-format-standard">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/lY4eZXm_YWu.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/lY4eZXm_YWu(1).html" style="border: none;"></iframe></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.9&appId=1190550297688933";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header class="kopa-header">
+<div class="kopa-header-top">
+<div class="wrapper">
+<div class="header-top-right">
+<nav class="top-nav">
+<ul id="menu-top-menu" class="top-menu clearfix sf-js-enabled sf-arrows" style="touch-action: pan-y;"><li id="menu-item-1342" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1342"><a href="http://www.mynotescode.com/sitemap_index.xml">Sitemap</a></li>
+<li id="menu-item-1331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1331"><a href="http://www.mynotescode.com/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-1332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1332"><a href="http://www.mynotescode.com/disclaimer/">Disclaimer</a></li>
+<li id="menu-item-1333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1333"><a href="http://www.mynotescode.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334"><a href="http://www.mynotescode.com/contact/">Contact</a></li>
+<li id="menu-item-1335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1335"><a href="http://www.mynotescode.com/about/">About</a></li>
+</ul> </nav>
+
+<nav class="top-nav-mobile">
+<a class="pull"><i class="fa fa-bars"></i></a>
+<ul id="menu-top-menu-1" class="top-menu-mobile clearfix"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1342"><a href="http://www.mynotescode.com/sitemap_index.xml">Sitemap</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1331"><a href="http://www.mynotescode.com/terms-of-service/">Terms of Service</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1332"><a href="http://www.mynotescode.com/disclaimer/">Disclaimer</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1333"><a href="http://www.mynotescode.com/privacy-policy/">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334"><a href="http://www.mynotescode.com/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1335"><a href="http://www.mynotescode.com/about/">About</a></li>
+</ul>
+</nav>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="kopa-header-middle">
+<div class="wrapper">
+<div class="kopa-logo">
+<div class="site-title" style="font-size: 40px;margin-bottom: 5px;"><a href="http://www.mynotescode.com/" style="text-shadow: 2px 2px 1px #F59F2F;">My Notes Code</a></div>
+<div style="color: white;">The Notes of Programmer</div>
+</div>
+
+<div class="kopa-social-links pull-right">
+<ul class="clearfix">
+<li>
+<a href="https://www.facebook.com/mynotescode" target="_blank" rel="nofollow" class="fa fa-facebook"></a>
+</li>
+<li>
+<a href="https://twitter.com/mynotescode" target="_blank" rel="nofollow" class="fa fa-twitter"></a>
+</li>
+<li>
+<a href="https://plus.google.com/u/1/118319575543333993544" target="_blank" rel="nofollow" class="fa fa-google-plus"></a>
+</li>
+<li>
+<a href="http://www.mynotescode.com/feed/" target="_blank" rel="nofollow" class="fa fa-rss"></a>
+</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div class="sticky-wrapper" style="height: 48px;"><div class="kopa-header-bottom fixed">
+<div class="wrapper">
+<div class="header-bottom-wrap">
+<nav class="kopa-main-nav">
+<ul id="menu-main-menu" class="main-menu sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;"><li id="menu-item-972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-972"><a href="http://www.mynotescode.com/">Home</a></li>
+<li id="menu-item-1248" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1248"><a href="http://www.mynotescode.com/category/tips-and-trick/">Tips and Trick</a></li>
+<li id="menu-item-973" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-973"><a href="http://www.mynotescode.com/category/php/">PHP</a></li>
+<li id="menu-item-978" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-978"><a href="http://www.mynotescode.com/category/codeigniter/">Codeigniter</a></li>
+<li id="menu-item-977" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-977"><a href="http://www.mynotescode.com/category/yii-framework/">Yii</a></li>
+<li id="menu-item-1530" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1530"><a href="http://www.mynotescode.com/category/jquery/">JQuery</a></li>
+</ul>
+</nav>
+
+<nav class="main-nav-mobile">
+<a class="pull">Menu<i class="fa fa-caret-down"></i></a>
+<ul id="menu-main-menu-1" class="main-menu-mobile"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-972"><a href="http://www.mynotescode.com/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1248"><a href="http://www.mynotescode.com/category/tips-and-trick/">Tips and Trick</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-973"><a href="http://www.mynotescode.com/category/php/">PHP</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-978"><a href="http://www.mynotescode.com/category/codeigniter/">Codeigniter</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-977"><a href="http://www.mynotescode.com/category/yii-framework/">Yii</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1530"><a href="http://www.mynotescode.com/category/jquery/">JQuery</a></li>
+</ul>
+</nav>
+
+<div class="kopa-search-box">
+<form action="http://www.mynotescode.com/" class="search-form clearfix" method="get">
+<input type="text" onblur="if (this.value == &#39;&#39;)
+            this.value = this.defaultValue;" onfocus="if (this.value == this.defaultValue)
+            this.value = &#39;&#39;;" value="Search..." name="s" class="search-text">
+<button type="submit" class="search-submit">
+<span class="fa fa-search"></span>
+</button>
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div>
+
+</header>
+
+<div class="kopa-breadcrumb"><div class="wrapper clearfix"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://www.mynotescode.com/"><span itemprop="title">Home</span></a></span>&nbsp;|&nbsp;<span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.mynotescode.com/category/php/" itemprop="url"><span itemprop="title">PHP</span></a></span>&nbsp;|&nbsp;<span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" class="current-page"><span itemprop="title">Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL</span></a></span></div></div>
+<div id="main-content" class="mb-20">
+<div class="wrapper">
+<div class="row">
+<div class="kopa-main-col"> <div class="kopa-bg-content">
+<div class="pd-20 kopa-entry-post">
+<article class="entry-item">
+<p class="entry-categories style-s">
+<a href="http://www.mynotescode.com/category/php/" rel="category tag">PHP</a> </p>
+<h1 class="entry-title" style="font-size: 25px;"><a href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/#">Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL</a></h1>
+<div class="entry-meta mb-20">
+<a href="http://www.mynotescode.com/author/rizaldimaulidia/">
+<div class="entry-author">
+<img alt="&lt;span&gt;Rizaldi Maulidia Achmad&lt;/span&gt;" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=40&amp;d=mm&amp;r=g 2x" class="avatar avatar-20 photo" height="20" width="20"><span>Rizaldi Maulidia Achmad</span>
+</div>
+</a> &nbsp;|&nbsp;
+<span class="entry-date"><i class="fa fa-clock-o"></i>Sep 22, 2016</span>
+</div>
+<div class="entry-thumb">
+<img width="400" height="300" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/PDF.png" class="attachment-ad-mag-lite-post-thumb size-ad-mag-lite-post-thumb wp-post-image" alt="img-responsive" title="Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL" srcset="http://www.mynotescode.com/wp-content/uploads/2016/09/PDF.png 400w, http://www.mynotescode.com/wp-content/uploads/2016/09/PDF-300x225.png 300w" sizes="(max-width: 400px) 100vw, 400px"></div>
+<div class="entry-desc">
+<aside class="mashsb-container mashsb-main mashsb-stretched"><div class="mashsb-box"><div class="mashsb-count mash-large" style="float:left;"><div class="counts mashsbcount">15</div><span class="mashsb-sharetext">SHARES</span></div><div class="mashsb-buttons"><a class="mashicon-facebook mash-large mash-center mashsb-noshadow" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.mynotescode.com%2Fcara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql%2F" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Share</span></a><a class="mashicon-twitter mash-large mash-center mashsb-noshadow" href="https://twitter.com/intent/tweet?text=Cara%20Mudah%20Membuat%20Laporan%20PDF%20dengan%20PHP%20dan%20MySQL&amp;url=http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Tweet</span></a><div class="onoffswitch2 mash-large mashsb-noshadow" style="display:none;"></div></div>
+</div>
+<div style="clear:both;"></div><div class="mashsb-toggle-container"></div></aside>
+<p style="text-align: justify;">Setelah sebelumnya saya sudah membuat catatan mengenai <a href="http://www.mynotescode.com/cara-membuat-laporan-pdf-dengan-codeigniter-dan-html2pdf/" target="_blank" rel="noopener noreferrer">Cara Membuat Laporan PDF dengan Codeigniter dan HTML2Pdf</a>, kali ini saya ingin berbagi cara membuat laporan pdf hanya dengan PHP dan MySQL (tanpa menggunakan framework Codeigniter). Silahkan ikuti&nbsp;langkah-langkahnya berikut ini :
+
+</p><div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px 0 0px 0;text-align:center;">
+<script async="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/adsbygoogle.js.download"></script>
+
+<ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9915705992307354" data-ad-slot="7835002829" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" scrolling="no" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<p></p>
+<p style="text-align: justify;"><strong>STEP 1 – PERSIAPAN</strong></p>
+<p style="text-align: justify;">Kita akan mempersiapkan terlebih dahulu hal-hal yang diperlukan.</p>
+<ol>
+<li style="text-align: justify;">Download&nbsp;Plugin HTML2PDF nya, klik link berikut ini : <a href="http://destyy.com/qSqB4Z" target="_blank" rel="noopener noreferrer">Download</a>.<br>
+<em>Bingung cara downloadnya? klik <strong><a href="http://www.mynotescode.com/cara-download/" target="_blank" rel="noopener noreferrer">disini</a></strong> untuk melihat caranya.</em></li>
+<li style="text-align: justify;">Buat sebuah folder baru dengan nama <span style="color: #ff6600;">latihan_pdf</span>, lalu simpan di <span style="color: #008000;">xampp/htdocs/</span></li>
+<li style="text-align: justify;">Ekstrak dan Copy plugin HTML2PDF yang sudah didownload ke dalam folder <span style="color: #008000;">xampp/htdocs/latihan_pdf/</span></li>
+</ol>
+<hr>
+<p><strong>STEP 2 – DATABASE</strong></p>
+<p style="text-align: justify;">Buat sebuah database dengan nama <span style="color: #ff6600;">mynotescode</span>, lalu buat tabel <span style="color: #ff6600;">siswa</span> dengan struktur tabel seperti gambar berikut ini :</p>
+<p><img class="alignnone wp-image-1154 size-full" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/PDF-Tabel-Siswa.png" alt="Struktur Tabel Siswa - Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL" width="189" height="141" srcset="http://www.mynotescode.com/wp-content/uploads/2016/09/PDF-Tabel-Siswa.png 189w, http://www.mynotescode.com/wp-content/uploads/2016/09/PDF-Tabel-Siswa-89x65.png 89w" sizes="(max-width: 189px) 100vw, 189px"></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql" style="display: none;">CREATE TABLE IF NOT EXISTS `siswa` (
+  `nis` varchar(11) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `jenis_kelamin` varchar(10) NOT NULL,
+  `telp` varchar(15) NOT NULL,
+  `alamat` text NOT NULL,
+  PRIMARY KEY (`nis`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="kw1">CREATE</span><span class=""> </span><span class="kw1">TABLE</span><span class=""> </span><span class="kw3">IF</span><span class=""> </span><span class="kw3">NOT</span><span class=""> EXISTS </span><span class="kw4">`siswa`</span><span class=""> (</span></li><li class=" even"><span class="">  </span><span class="kw4">`nis`</span><span class=""> </span><span class="kw1">varchar</span><span class="">(</span><span class="nu0">11</span><span class="">) </span><span class="kw3">NOT</span><span class=""> </span><span class="kw3">NULL</span><span class="">,</span></li><li class=" odd"><span class="">  </span><span class="kw4">`nama`</span><span class=""> </span><span class="kw1">varchar</span><span class="">(</span><span class="nu0">50</span><span class="">) </span><span class="kw3">NOT</span><span class=""> </span><span class="kw3">NULL</span><span class="">,</span></li><li class=" even"><span class="">  </span><span class="kw4">`jenis_kelamin`</span><span class=""> </span><span class="kw1">varchar</span><span class="">(</span><span class="nu0">10</span><span class="">) </span><span class="kw3">NOT</span><span class=""> </span><span class="kw3">NULL</span><span class="">,</span></li><li class=" odd"><span class="">  </span><span class="kw4">`telp`</span><span class=""> </span><span class="kw1">varchar</span><span class="">(</span><span class="nu0">15</span><span class="">) </span><span class="kw3">NOT</span><span class=""> </span><span class="kw3">NULL</span><span class="">,</span></li><li class=" even"><span class="">  </span><span class="kw4">`alamat`</span><span class=""> text </span><span class="kw3">NOT</span><span class=""> </span><span class="kw3">NULL</span><span class="">,</span></li><li class=" odd"><span class="">  </span><span class="kw1">PRIMARY</span><span class=""> </span><span class="kw1">KEY</span><span class=""> (</span><span class="kw4">`nis`</span><span class="">)</span></li><li class=" even"><span class="">) ENGINE=InnoDB </span><span class="kw1">DEFAULT</span><span class=""> CHARSET=latin1;</span></li></ol><pre style="display: none;">CREATE TABLE IF NOT EXISTS `siswa` (
+  `nis` varchar(11) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `jenis_kelamin` varchar(10) NOT NULL,
+  `telp` varchar(15) NOT NULL,
+  `alamat` text NOT NULL,
+  PRIMARY KEY (`nis`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<hr>
+<p><strong>STEP 3 – KONEKSI DATABASE</strong></p>
+<p style="text-align: justify;">Pada tahap ini, kita akan membuat sebuah file php yang berfungsi untuk koneksi ke database MySQL. Buat sebuah file dengan nama <span style="color: #ff6600;">koneksi.php</span>&nbsp;lalu simpan di folder <span style="color: #008000;">xampp/htdocs/latihan_pdf/.</span>&nbsp;Berikut ini isi dari file tersebut :</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" style="display: none;">&lt;?php
+$host = "localhost"; // Nama hostnya
+$user = "root"; // Username
+$pass = ""; // Password (Isi jika menggunakan password)
+$connect = mysqli_connect($host, $user, $pass, "mynotescode"); // Koneksi ke MySQL
+?&gt;</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="de1">&lt;?php</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw3">$host</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="st0">"localhost"</span><span class="">;</span><span class="co1"> // Nama hostnya</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw3">$user</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="st0">"root"</span><span class="">;</span><span class="co1"> // Username</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw3">$pass</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="st0">""</span><span class="">;</span><span class="co1"> // Password (Isi jika menggunakan password)</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw3">$connect</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">mysqli_connect</span><span class="br0">(</span><span class="kw3">$host</span><span class="">, </span><span class="kw3">$user</span><span class="">, </span><span class="kw3">$pass</span><span class="">, </span><span class="st0">"mynotescode"</span><span class="br0">)</span><span class="">;</span><span class="co1"> // Koneksi ke MySQL</span><span class=""></span></li><li class=" even"><span class=""></span><span class="de2">?&gt;</span></li></ol><pre style="display: none;">&lt;?php
+$host = "localhost"; // Nama hostnya
+$user = "root"; // Username
+$pass = ""; // Password (Isi jika menggunakan password)
+$connect = mysqli_connect($host, $user, $pass, "mynotescode"); // Koneksi ke MySQL
+?&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<hr>
+<div class="baca"><div class="titlebaca"><strong>Baca Juga:</strong></div><div class="contentbaca"><ul><li><a target="_blank" href="http://www.mynotescode.com/upload-gambar-dengan-codeigniter/" title="Cara Membuat Upload Gambar dengan Codeigniter dan MySQL">Cara Membuat Upload Gambar dengan Codeigniter dan MySQL</a></li><li><a target="_blank" href="http://www.mynotescode.com/cara-membuat-laporan-pdf-dengan-codeigniter-dan-html2pdf/" title="Cara Membuat Laporan PDF dengan Codeigniter dan Html2Pdf">Cara Membuat Laporan PDF dengan Codeigniter dan Html2Pdf</a></li></ul></div></div><div class="partner-banner-aftc-baca-juga" style="text-align: center; margin-top: 30px;"></div>
+<p><strong>STEP 4 – TAMPILAN AWAL</strong></p>
+<p style="text-align: justify;">Selanjutnya kita akan membuat halaman / tampilan awal website kita. Buat sebuah file php dengan nama <span style="color: #ff6600;">index.php</span> dan simpan di folder <span style="color: #008000;">xampp/htdocs/latihan_pdf</span>. Berikut ini kodenya :</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" style="display: none;">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Data Siswa&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Data Siswa&lt;/h1&gt;&lt;hr&gt;
+
+&lt;a href="print.php"&gt;Cetak Data&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;table border="1" cellpadding="8"&gt;
+&lt;tr&gt;
+    &lt;th&gt;NIS&lt;/th&gt;
+    &lt;th&gt;Nama&lt;/th&gt;
+    &lt;th&gt;Jenis Kelamin&lt;/th&gt;
+    &lt;th&gt;Telepon&lt;/th&gt;
+    &lt;th&gt;Alamat&lt;/th&gt;
+&lt;/tr&gt;
+ 
+&lt;?php
+// Load file koneksi.php
+include "koneksi.php";
+ 
+$query = "SELECT * FROM siswa"; // Tampilkan semua data gambar
+$sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+$row = mysqli_num_rows($sql); // Ambil jumlah data dari hasil eksekusi $sql
+ 
+if($row &gt; 0){ // Jika jumlah data lebih dari 0 (Berarti jika data ada)
+    while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
+        echo "&lt;tr&gt;";
+        echo "&lt;td&gt;".$data['nis']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['nama']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['jenis_kelamin']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['telp']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['alamat']."&lt;/td&gt;";
+        echo "&lt;/tr&gt;";
+    }
+}else{ // Jika data tidak ada
+    echo "&lt;tr&gt;&lt;td colspan='4'&gt;Data tidak ada&lt;/td&gt;&lt;/tr&gt;";
+}
+?&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="sy0">&lt;</span><span class="">html</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">head</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="sy0">&lt;</span><span class="">title</span><span class="sy0">&gt;</span><span class="">Data Siswa</span><span class="sy0">&lt;</span><span class="">/title</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">/head</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">body</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">h1</span><span class="sy0">&gt;</span><span class="">Data Siswa</span><span class="sy0">&lt;</span><span class="">/h1</span><span class="sy0">&gt;</span><span class="sy0">&lt;</span><span class="">hr</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">a href</span><span class="sy0">=</span><span class="st0">"print.php"</span><span class="sy0">&gt;</span><span class="">Cetak Data</span><span class="sy0">&lt;</span><span class="">/a</span><span class="sy0">&gt;</span><span class="sy0">&lt;</span><span class="">br</span><span class="sy0">&gt;</span><span class="sy0">&lt;</span><span class="">br</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">table border</span><span class="sy0">=</span><span class="st0">"1"</span><span class=""> cellpadding</span><span class="sy0">=</span><span class="st0">"8"</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">tr</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="kw4">NIS</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="">Nama</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="">Jenis Kelamin</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="">Telepon</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="">Alamat</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">/tr</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""> </span></li><li class=" odd"><span class=""></span><span class="de1">&lt;?php</span><span class="co1"></span></li><li class=" even"><span class="co1">// Load file koneksi.php</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">include</span><span class=""> </span><span class="st0">"koneksi.php"</span><span class="">;</span></li><li class=" even"><span class=""> </span></li><li class=" odd"><span class=""></span><span class="kw3">$query</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="st0">"SELECT * FROM siswa"</span><span class="">;</span><span class="co1"> // Tampilkan semua data gambar</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw3">$sql</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">mysqli_query</span><span class="br0">(</span><span class="kw3">$connect</span><span class="">, </span><span class="kw3">$query</span><span class="br0">)</span><span class="">;</span><span class="co1"> // Eksekusi/Jalankan query dari variabel $query</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw3">$row</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">mysqli_num_rows</span><span class="br0">(</span><span class="kw3">$sql</span><span class="br0">)</span><span class="">;</span><span class="co1"> // Ambil jumlah data dari hasil eksekusi $sql</span><span class=""></span></li><li class=" even"><span class=""> </span></li><li class=" odd"><span class=""></span><span class="me0">if</span><span class="br0">(</span><span class="kw3">$row</span><span class=""> </span><span class="sy0">&gt;</span><span class=""> </span><span class="nu0">0</span><span class="br0">)</span><span class="br0">{</span><span class="co1"> // Jika jumlah data lebih dari 0 (Berarti jika data ada)</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">while</span><span class="br0">(</span><span class="kw3">$data</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">mysqli_fetch_array</span><span class="br0">(</span><span class="kw3">$sql</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span><span class="co1"> // Ambil semua data dari hasil eksekusi $sql</span><span class=""></span></li><li class=" odd"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;tr&gt;"</span><span class="">;</span></li><li class=" even"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'nis'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" odd"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'nama'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" even"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'jenis_kelamin'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" odd"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'telp'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" even"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'alamat'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" odd"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;/tr&gt;"</span><span class="">;</span></li><li class=" even"><span class="">    </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span><span class="co1"> // Jika data tidak ada</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;tr&gt;&lt;td colspan='4'&gt;Data tidak ada&lt;/td&gt;&lt;/tr&gt;"</span><span class="">;</span></li><li class=" odd"><span class=""></span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class=""></span><span class="de2">?&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">/table</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">/body</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">/html</span><span class="sy0">&gt;</span></li></ol><pre style="display: none;">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Data Siswa&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Data Siswa&lt;/h1&gt;&lt;hr&gt;
+
+&lt;a href="print.php"&gt;Cetak Data&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;table border="1" cellpadding="8"&gt;
+&lt;tr&gt;
+    &lt;th&gt;NIS&lt;/th&gt;
+    &lt;th&gt;Nama&lt;/th&gt;
+    &lt;th&gt;Jenis Kelamin&lt;/th&gt;
+    &lt;th&gt;Telepon&lt;/th&gt;
+    &lt;th&gt;Alamat&lt;/th&gt;
+&lt;/tr&gt;
+ 
+&lt;?php
+// Load file koneksi.php
+include "koneksi.php";
+ 
+$query = "SELECT * FROM siswa"; // Tampilkan semua data gambar
+$sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+$row = mysqli_num_rows($sql); // Ambil jumlah data dari hasil eksekusi $sql
+ 
+if($row &gt; 0){ // Jika jumlah data lebih dari 0 (Berarti jika data ada)
+    while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
+        echo "&lt;tr&gt;";
+        echo "&lt;td&gt;".$data['nis']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['nama']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['jenis_kelamin']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['telp']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['alamat']."&lt;/td&gt;";
+        echo "&lt;/tr&gt;";
+    }
+}else{ // Jika data tidak ada
+    echo "&lt;tr&gt;&lt;td colspan='4'&gt;Data tidak ada&lt;/td&gt;&lt;/tr&gt;";
+}
+?&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>Berikut ini adalah sedikit penjelasan dari kode diatas :</p>
+<p style="text-align: justify;"><span style="color: #3366ff;">$sql = mysqli_query($connect, $query);</span><br>
+Untuk mengeksekusi / menjalankan query sql. struktur dasar penulisannya adalah sebagai berikut :</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" style="display: none;">mysqli_query($connect, $query);
+
+/*
+Keterangan :
+- $connect : diisi dengan koneksi ke mysql. hasil dari mysqli_connect
+- $query : diisi dengan Query SQL yang diinginkan
+*/</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="me0">mysqli_query</span><span class="br0">(</span><span class="kw3">$connect</span><span class="">, </span><span class="kw3">$query</span><span class="br0">)</span><span class="">;</span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class=""></span><span class="co2">/*</span></li><li class=" even"><span class="co2">Keterangan :</span></li><li class=" odd"><span class="co2">- $connect : diisi dengan koneksi ke mysql. hasil dari mysqli_connect</span></li><li class=" even"><span class="co2">- $query : diisi dengan Query SQL yang diinginkan</span></li><li class=" odd"><span class="co2">*/</span></li></ol><pre style="display: none;">mysqli_query($connect, $query);
+
+/*
+Keterangan :
+- $connect : diisi dengan koneksi ke mysql. hasil dari mysqli_connect
+- $query : diisi dengan Query SQL yang diinginkan
+*/</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p style="text-align: justify;"><span style="color: #3366ff;">mysqli_num_rows($sql);</span><br>
+Untuk mengambil jumlah data dari hasil eksekusi suatu query sql. Struktur dasar penulisannya adalah sebagai berikut :</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" style="display: none;">mysqli_num_rows($sql);
+
+/*
+Keterangan :
+- $sql : diisi dengan hasil eksekusi query sql(mysql_query())
+*/</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="me0">mysqli_num_rows</span><span class="br0">(</span><span class="kw3">$sql</span><span class="br0">)</span><span class="">;</span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class=""></span><span class="co2">/*</span></li><li class=" even"><span class="co2">Keterangan :</span></li><li class=" odd"><span class="co2">- $sql : diisi dengan hasil eksekusi query sql(mysql_query())</span></li><li class=" even"><span class="co2">*/</span></li></ol><pre style="display: none;">mysqli_num_rows($sql);
+
+/*
+Keterangan :
+- $sql : diisi dengan hasil eksekusi query sql(mysql_query())
+*/</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p style="text-align: justify;"><span style="color: #3366ff;">mysqli_fetch_array($sql);</span><br>
+Untuk mengambil data dari hasil eksekusi suatu query sql.&nbsp;Struktur dasar penulisannya adalah sebagai berikut :</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" style="display: none;">mysqli_fetch_array($sql);
+
+/*
+Keterangan :
+- $sql : diisi dengan hasil eksekusi query sql(mysql_query())
+*/</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="me0">mysqli_fetch_array</span><span class="br0">(</span><span class="kw3">$sql</span><span class="br0">)</span><span class="">;</span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class=""></span><span class="co2">/*</span></li><li class=" even"><span class="co2">Keterangan :</span></li><li class=" odd"><span class="co2">- $sql : diisi dengan hasil eksekusi query sql(mysql_query())</span></li><li class=" even"><span class="co2">*/</span></li></ol><pre style="display: none;">mysqli_fetch_array($sql);
+
+/*
+Keterangan :
+- $sql : diisi dengan hasil eksekusi query sql(mysql_query())
+*/</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p style="text-align: justify;">Kode diatas saya simpan didalam looping while&nbsp;berfungsi untuk melakukan proses perulangan sampai data terkahir dengan tujuan agar kita bisa menampilkan datanya satu per satu.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" style="display: none;">echo "&lt;tr&gt;";
+echo "&lt;td&gt;".$data['nis']."&lt;/td&gt;";
+echo "&lt;td&gt;".$data['nama']."&lt;/td&gt;";
+echo "&lt;td&gt;".$data['jenis_kelamin']."&lt;/td&gt;";
+echo "&lt;td&gt;".$data['telp']."&lt;/td&gt;";
+echo "&lt;td&gt;".$data['alamat']."&lt;/td&gt;";
+echo "&lt;/tr&gt;";</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;tr&gt;"</span><span class="">;</span></li><li class=" even"><span class=""></span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'nis'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" odd"><span class=""></span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'nama'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" even"><span class=""></span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'jenis_kelamin'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" odd"><span class=""></span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'telp'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" even"><span class=""></span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'alamat'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" odd"><span class=""></span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;/tr&gt;"</span><span class="">;</span></li></ol><pre style="display: none;">echo "&lt;tr&gt;";
+echo "&lt;td&gt;".$data['nis']."&lt;/td&gt;";
+echo "&lt;td&gt;".$data['nama']."&lt;/td&gt;";
+echo "&lt;td&gt;".$data['jenis_kelamin']."&lt;/td&gt;";
+echo "&lt;td&gt;".$data['telp']."&lt;/td&gt;";
+echo "&lt;td&gt;".$data['alamat']."&lt;/td&gt;";
+echo "&lt;/tr&gt;";</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p style="text-align: justify;">Pada kode diatas terdapat variabel <span style="color: #3366ff;">$data</span> digunakan untuk mengambil isi dari field-field yang ada pada tabel <span style="color: #ff6600;">siswa</span>&nbsp;di database <span style="color: #ff6600;">latihan</span>. Pada kode diatas juga ada kode yang berada di dalam tanda <span style="color: #3366ff;">[‘…..’]</span>, kode tersebut harus sama dengan nama field yang ada pada tabel <span style="color: #ff6600;">siswa</span>.</p>
+
+<div class="quads-location quads-ad3" id="quads-ad3" style="float:none;margin:0px;">
+<script async="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/adsbygoogle.js.download"></script>
+<ins class="adsbygoogle" style="display: block; text-align: center; height: 200px;" data-ad-format="fluid" data-ad-layout="in-article" data-ad-client="ca-pub-9915705992307354" data-ad-slot="1382378755" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:810px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:810px;background-color:transparent;"><iframe width="810" height="200" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:810px;height:200px;" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<hr>
+<p><strong>STEP 5 – PROSES CETAK (PRINT)</strong></p>
+<p style="text-align: justify;">Sesuai judul dari step 5 ini, kita akan masuk ke inti dari catatan ini yakni membuat proses cetak ke file pdf. Pertama-tama buat dulu sebuah file baru dan beri nama <span style="color: #ff6600;">print.php</span>, lalu simpan file tersebut di folder <span style="color: #008000;">xampp/htdocs/latihan_pdf/</span>. Berikut ini isi / skrip dari file tersebut :</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" style="display: none;">&lt;?php ob_start(); ?&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Cetak PDF&lt;/title&gt;
+    
+   &lt;style&gt;
+   table {border-collapse:collapse; table-layout:fixed;width: 630px;}
+   table td {word-wrap:break-word;width: 20%;}
+   &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  
+&lt;h1 style="text-align: center;"&gt;Data Siswa&lt;/h1&gt;
+&lt;table border="1" width="100%"&gt;
+&lt;tr&gt;
+  &lt;th&gt;NIS&lt;/th&gt;
+  &lt;th&gt;Nama&lt;/th&gt;
+  &lt;th&gt;Jenis Kelamin&lt;/th&gt;
+  &lt;th&gt;Telepon&lt;/th&gt;
+  &lt;th&gt;Alamat&lt;/th&gt;
+&lt;/tr&gt;
+&lt;?php
+// Load file koneksi.php
+include "koneksi.php";
+ 
+$query = "SELECT * FROM siswa"; // Tampilkan semua data gambar
+$sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+$row = mysqli_num_rows($sql); // Ambil jumlah data dari hasil eksekusi $sql
+ 
+if($row &gt; 0){ // Jika jumlah data lebih dari 0 (Berarti jika data ada)
+    while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
+        echo "&lt;tr&gt;";
+        echo "&lt;td&gt;".$data['nis']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['nama']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['jenis_kelamin']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['telp']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['alamat']."&lt;/td&gt;";
+        echo "&lt;/tr&gt;";
+    }
+}else{ // Jika data tidak ada
+    echo "&lt;tr&gt;&lt;td colspan='4'&gt;Data tidak ada&lt;/td&gt;&lt;/tr&gt;";
+}
+?&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;?php
+$html = ob_get_contents();
+ob_end_clean();
+        
+require_once('html2pdf/html2pdf.class.php');
+$pdf = new HTML2PDF('P','A4','en');
+$pdf-&gt;WriteHTML($html);
+$pdf-&gt;Output('Data Siswa.pdf', 'D');
+?&gt;</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="de1">&lt;?php</span><span class=""> </span><span class="me0">ob_start</span><span class="br0">(</span><span class="br0">)</span><span class="">; </span><span class="de2">?&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">html</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">head</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class="">  </span><span class="sy0">&lt;</span><span class="">title</span><span class="sy0">&gt;</span><span class="">Cetak </span><span class="kw4">PDF</span><span class="sy0">&lt;</span><span class="">/title</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class="">    </span></li><li class=" even"><span class="">   </span><span class="sy0">&lt;</span><span class="">style</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class="">   table </span><span class="br0">{</span><span class="">border</span><span class="sy0">-</span><span class="">collapse:collapse; table</span><span class="sy0">-</span><span class="">layout:fixed;width: 630px;</span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class="">   table td </span><span class="br0">{</span><span class="">word</span><span class="sy0">-</span><span class="">wrap:</span><span class="kw1">break</span><span class="sy0">-</span><span class="">word;width: </span><span class="nu0">20</span><span class="">%;</span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">   </span><span class="sy0">&lt;</span><span class="">/style</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">/head</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">body</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class="">  </span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">h1 style</span><span class="sy0">=</span><span class="st0">"text-align: center;"</span><span class="sy0">&gt;</span><span class="">Data Siswa</span><span class="sy0">&lt;</span><span class="">/h1</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">table border</span><span class="sy0">=</span><span class="st0">"1"</span><span class=""> width</span><span class="sy0">=</span><span class="st0">"100%"</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">tr</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class="">  </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="kw4">NIS</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class="">  </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="">Nama</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class="">  </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="">Jenis Kelamin</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class="">  </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="">Telepon</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class="">  </span><span class="sy0">&lt;</span><span class="">th</span><span class="sy0">&gt;</span><span class="">Alamat</span><span class="sy0">&lt;</span><span class="">/th</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">/tr</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">?php</span><span class="co1"></span></li><li class=" odd"><span class="co1">// Load file koneksi.php</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">include</span><span class=""> </span><span class="st0">"koneksi.php"</span><span class="">;</span></li><li class=" odd"><span class=""> </span></li><li class=" even"><span class=""></span><span class="kw3">$query</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="st0">"SELECT * FROM siswa"</span><span class="">;</span><span class="co1"> // Tampilkan semua data gambar</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw3">$sql</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">mysqli_query</span><span class="br0">(</span><span class="kw3">$connect</span><span class="">, </span><span class="kw3">$query</span><span class="br0">)</span><span class="">;</span><span class="co1"> // Eksekusi/Jalankan query dari variabel $query</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw3">$row</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">mysqli_num_rows</span><span class="br0">(</span><span class="kw3">$sql</span><span class="br0">)</span><span class="">;</span><span class="co1"> // Ambil jumlah data dari hasil eksekusi $sql</span><span class=""></span></li><li class=" odd"><span class=""> </span></li><li class=" even"><span class=""></span><span class="kw1">if</span><span class="br0">(</span><span class="kw3">$row</span><span class=""> </span><span class="sy0">&gt;</span><span class=""> </span><span class="nu0">0</span><span class="br0">)</span><span class="br0">{</span><span class="co1"> // Jika jumlah data lebih dari 0 (Berarti jika data ada)</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="kw1">while</span><span class="br0">(</span><span class="kw3">$data</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">mysqli_fetch_array</span><span class="br0">(</span><span class="kw3">$sql</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span><span class="co1"> // Ambil semua data dari hasil eksekusi $sql</span><span class=""></span></li><li class=" even"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;tr&gt;"</span><span class="">;</span></li><li class=" odd"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'nis'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" even"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'nama'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" odd"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'jenis_kelamin'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" even"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'telp'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" odd"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;td&gt;"</span><span class="">.</span><span class="kw3">$data</span><span class="br0">[</span><span class="st1">'alamat'</span><span class="br0">]</span><span class="">.</span><span class="st0">"&lt;/td&gt;"</span><span class="">;</span></li><li class=" even"><span class="">        </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;/tr&gt;"</span><span class="">;</span></li><li class=" odd"><span class="">    </span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class=""></span><span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span><span class="co1"> // Jika data tidak ada</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="kw1">echo</span><span class=""> </span><span class="st0">"&lt;tr&gt;&lt;td colspan='4'&gt;Data tidak ada&lt;/td&gt;&lt;/tr&gt;"</span><span class="">;</span></li><li class=" even"><span class=""></span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="de2">?&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">/table</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="">/body</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">/html</span><span class="sy0">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="de1">&lt;?php</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw3">$html</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">ob_get_contents</span><span class="br0">(</span><span class="br0">)</span><span class="">;</span></li><li class=" even"><span class=""></span><span class="me0">ob_end_clean</span><span class="br0">(</span><span class="br0">)</span><span class="">;</span></li><li class=" odd"><span class="">        </span></li><li class=" even"><span class=""></span><span class="kw1">require_once</span><span class="br0">(</span><span class="st1">'html2pdf/html2pdf.class.php'</span><span class="br0">)</span><span class="">;</span></li><li class=" odd"><span class=""></span><span class="kw3">$pdf</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="kw1">new</span><span class=""> </span><span class="kw4">HTML2PDF</span><span class="br0">(</span><span class="st1">'P'</span><span class="">,</span><span class="st1">'A4'</span><span class="">,</span><span class="st1">'en'</span><span class="br0">)</span><span class="">;</span></li><li class=" even"><span class=""></span><span class="kw3">$pdf</span><span class="sy0">-</span><span class="sy0">&gt;</span><span class="me1">WriteHTML</span><span class="br0">(</span><span class="kw3">$html</span><span class="br0">)</span><span class="">;</span></li><li class=" odd"><span class=""></span><span class="kw3">$pdf</span><span class="sy0">-</span><span class="sy0">&gt;</span><span class="me1">Output</span><span class="br0">(</span><span class="st1">'Data Siswa.pdf'</span><span class="">, </span><span class="st1">'D'</span><span class="br0">)</span><span class="">;</span></li><li class=" even"><span class=""></span><span class="de2">?&gt;</span></li></ol><pre style="display: none;">&lt;?php ob_start(); ?&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Cetak PDF&lt;/title&gt;
+    
+   &lt;style&gt;
+   table {border-collapse:collapse; table-layout:fixed;width: 630px;}
+   table td {word-wrap:break-word;width: 20%;}
+   &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  
+&lt;h1 style="text-align: center;"&gt;Data Siswa&lt;/h1&gt;
+&lt;table border="1" width="100%"&gt;
+&lt;tr&gt;
+  &lt;th&gt;NIS&lt;/th&gt;
+  &lt;th&gt;Nama&lt;/th&gt;
+  &lt;th&gt;Jenis Kelamin&lt;/th&gt;
+  &lt;th&gt;Telepon&lt;/th&gt;
+  &lt;th&gt;Alamat&lt;/th&gt;
+&lt;/tr&gt;
+&lt;?php
+// Load file koneksi.php
+include "koneksi.php";
+ 
+$query = "SELECT * FROM siswa"; // Tampilkan semua data gambar
+$sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+$row = mysqli_num_rows($sql); // Ambil jumlah data dari hasil eksekusi $sql
+ 
+if($row &gt; 0){ // Jika jumlah data lebih dari 0 (Berarti jika data ada)
+    while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
+        echo "&lt;tr&gt;";
+        echo "&lt;td&gt;".$data['nis']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['nama']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['jenis_kelamin']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['telp']."&lt;/td&gt;";
+        echo "&lt;td&gt;".$data['alamat']."&lt;/td&gt;";
+        echo "&lt;/tr&gt;";
+    }
+}else{ // Jika data tidak ada
+    echo "&lt;tr&gt;&lt;td colspan='4'&gt;Data tidak ada&lt;/td&gt;&lt;/tr&gt;";
+}
+?&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;?php
+$html = ob_get_contents();
+ob_end_clean();
+        
+require_once('html2pdf/html2pdf.class.php');
+$pdf = new HTML2PDF('P','A4','en');
+$pdf-&gt;WriteHTML($html);
+$pdf-&gt;Output('Data Siswa.pdf', 'D');
+?&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<div class="baca"><div class="titlebaca"><strong>Baca Juga:</strong></div><div class="contentbaca"><ul><li><a target="_blank" href="http://www.mynotescode.com/export-excel-dengan-phpexcel-codeigniter/" title="Cara Membuat Export Data Ke Excel Dengan PHPExcel dan Codeigniter">Cara Membuat Export Data Ke Excel Dengan PHPExcel dan Codeigniter</a></li><li><a target="_blank" href="http://www.mynotescode.com/cara-mudah-menghitung-nilai-ipk-menggunakan-pascal/" title="Cara Mudah Menghitung Nilai IPK Menggunakan Pascal">Cara Mudah Menghitung Nilai IPK Menggunakan Pascal</a></li></ul></div></div><div class="partner-banner-aftc-baca-juga" style="text-align: center; margin-top: 30px;"></div>
+<p style="text-align: justify;">Sebenarnya skrip diatas hampir sama dengan isi dari file <span style="color: #ff6600;">index.php</span>. Hanya saja pada skrip diatas terdapat skrip berikut ini :</p>
+<p><span style="color: #3366ff;">&lt;?php <span style="color: #ff0000;">ob_start();</span> ?&gt;</span><br>
+<span style="color: #3366ff;">// …..</span><br>
+<span style="color: #3366ff;">// skrip html</span><br>
+<span style="color: #3366ff;">// …..</span><br>
+<span style="color: #3366ff;">&lt;?php</span><br>
+<span style="color: #ff0000;">$html = ob_get_contents();</span><br>
+<span style="color: #ff0000;">ob_end_clean();</span></p>
+<p style="text-align: justify;">Pada skrip <span style="color: #ff6600;">print.php</span>,&nbsp;Skrip yang berfungsi untuk menampilkan data siswa pada tabel diapit oleh skrip yang saya beri tanda merah. Skrip tersebut berfungsi untuk mengambil tampilan tabel data siswa dan memasukkannya ke dalam variabel <span style="color: #3366ff;">$html</span>. Variabel <span style="color: #3366ff;">$html</span> ini akan digunakan sebagai output yang kita inginkan pada file pdfnya. Lihat&nbsp;skrip berikut ini :</p>
+<p><span style="color: #3366ff;">require_once(‘html2pdf/html2pdf.class.php’);</span><br>
+<span style="color: #3366ff;"> $pdf = new HTML2PDF(‘P’,’A4′,’en’);</span><br>
+<span style="color: #3366ff;"> $pdf-&gt;WriteHTML(<span style="color: #ff0000;">$html</span>);</span><br>
+<span style="color: #3366ff;"> $pdf-&gt;Output(‘Data Siswa.pdf’, ‘D’);</span></p>
+<p style="text-align: justify;">Skrip&nbsp;diatas digunakan untuk mengkonversi skrip&nbsp;html menjadi pdf. Dimulai dari skrip&nbsp;<span style="color: #3366ff;">require_once(‘./assets/html2pdf/html2pdf.class.php’);</span>, skrip&nbsp;ini berfungsi untuk memuat (meload) plugin html2pdfnya. Lalu skrip&nbsp;<span style="color: #3366ff;">$pdf = new HTML2PDF(‘P’,’A4′,’en’);</span>, skrip&nbsp;ini berfungsi memanggil fungsi __construct pada plugin html2pdf. Berikut ini adalah fungsi __construct yang kita panggil pada plugin html2pdfnya :</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" style="display: none;">/**
+* Constructeur
+*
+* @param string $sens - orientasinya : landscape atau portrait
+* @param string $format - format kertasnya : A4, A5, dan lain-lain
+* @param string $langue - Bahasanya : en, fr, dan lain-lain
+* @param boolean $unicode - TRUE means clustering the input text IS unicode (default = true)
+* @param String $encoding - charset encoding; Default is UTF-8
+* @param array $marges - margins by default, in order (left, top, right, bottom)
+* @return null
+*/
+public function __construct($sens = 'P', $format = 'A4', $langue='en', $unicode=true, $encoding='UTF-8', $marges = array(5, 5, 5, 8))</pre><div class="EnlighterJSWrapper enlighterEnlighterJSWrapper"><ol class="hoverEnabled enlighterEnlighterJS EnlighterJS"><li class=" odd"><span class="co2">/**</span></li><li class=" even"><span class="co2">* Constructeur</span></li><li class=" odd"><span class="co2">*</span></li><li class=" even"><span class="co2">* @param string $sens - orientasinya : landscape atau portrait</span></li><li class=" odd"><span class="co2">* @param string $format - format kertasnya : A4, A5, dan lain-lain</span></li><li class=" even"><span class="co2">* @param string $langue - Bahasanya : en, fr, dan lain-lain</span></li><li class=" odd"><span class="co2">* @param boolean $unicode - TRUE means clustering the input text IS unicode (default = true)</span></li><li class=" even"><span class="co2">* @param String $encoding - charset encoding; Default is UTF-8</span></li><li class=" odd"><span class="co2">* @param array $marges - margins by default, in order (left, top, right, bottom)</span></li><li class=" even"><span class="co2">* @return null</span></li><li class=" odd"><span class="co2">*/</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">public</span><span class=""> </span><span class="kw1">function</span><span class=""> </span><span class="me0">__construct</span><span class="br0">(</span><span class="kw3">$sens</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="st1">'P'</span><span class="">, </span><span class="kw3">$format</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="st1">'A4'</span><span class="">, </span><span class="kw3">$langue</span><span class="sy0">=</span><span class="st1">'en'</span><span class="">, </span><span class="kw3">$unicode</span><span class="sy0">=</span><span class="kw4">true</span><span class="">, </span><span class="kw3">$encoding</span><span class="sy0">=</span><span class="st1">'UTF-8'</span><span class="">, </span><span class="kw3">$marges</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="me0">array</span><span class="br0">(</span><span class="nu0">5</span><span class="">, </span><span class="nu0">5</span><span class="">, </span><span class="nu0">5</span><span class="">, </span><span class="nu0">8</span><span class="br0">)</span><span class="br0">)</span></li></ol><pre style="display: none;">/**
+* Constructeur
+*
+* @param string $sens - orientasinya : landscape atau portrait
+* @param string $format - format kertasnya : A4, A5, dan lain-lain
+* @param string $langue - Bahasanya : en, fr, dan lain-lain
+* @param boolean $unicode - TRUE means clustering the input text IS unicode (default = true)
+* @param String $encoding - charset encoding; Default is UTF-8
+* @param array $marges - margins by default, in order (left, top, right, bottom)
+* @return null
+*/
+public function __construct($sens = 'P', $format = 'A4', $langue='en', $unicode=true, $encoding='UTF-8', $marges = array(5, 5, 5, 8))</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSInfoButton" title="EnlighterJS Syntax Highlighter"></a><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p style="text-align: justify;">Lalu skrip&nbsp;<span style="color: #3366ff;">$pdf-&gt;WriteHTML($html);</span>, skrip&nbsp;ini berfungsi untuk menentukan apa yang ingin ditampilkan pada pdfnya. Struktur dasar penulisannya yaitu&nbsp;<span style="color: #3366ff;">$pdf-&gt;WriteHTML(‘kode_htmlnya’);</span>. Pada kasus ini, kita memasukan kode htmlnya kedalam variabel $html. Yang terakhir skrip&nbsp;<span style="color: #3366ff;">$pdf-&gt;Output(‘Data Siswa.pdf’, ‘D’)<em>;</em></span>, kode tersebut berfungsi untuk menentukan nama file pdf yang kita buat. dan juga untuk menentukan mode apa yang ingin dilakukan ketika skrip&nbsp;tersebut dipanggil. Contohnya disitu ada skrip&nbsp;<span style="color: #3366ff;">…,’D’);</span>, Huruf D disitu berarti ketika skrip&nbsp;dipanggil, maka lakukan proses download pada file pdfnya. sebenarnya ada banyak mode yang bisa kita lakukan, seperti&nbsp;tampilkan pdfnya dibrowser ketika skrip&nbsp;itu dipanggil dan lain-lain (untuk lebih detailnya, <a href="http://sh.st/37Jkf" target="_blank" rel="noopener noreferrer">klik disini</a>).</p>
+<p style="text-align: justify;"><strong>Source Code<br>
+</strong>Untuk mengunduh source code nya, Klik link berikut ini : <a href="http://destyy.com/qSqNcB" target="_blank" rel="noopener noreferrer">Download</a>.<br>
+<em>Bingung cara downloadnya? klik <strong><a href="http://www.mynotescode.com/cara-download/" target="_blank" rel="noopener noreferrer">disini</a></strong> untuk melihat caranya.</em></p>
+
+<div class="quads-location quads-ad2" id="quads-ad2" style="float:none;margin:0px 0 0px 0;text-align:center;">
+<script async="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/adsbygoogle.js.download"></script>
+
+<ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9915705992307354" data-ad-slot="4698236424" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<p style="text-align: justify;">Sekian untuk catatan kali ini, semoga bisa bermanfaat dan membantu. Jika ada yang kurang dimengerti, jangan sungkan untuk bertanya pada form komentar dibawah ini.</p>
+<p style="text-align: justify;">Terimakasih.</p>
+<p style="text-align: justify;"><strong>Sumber &amp; Referensi<br>
+</strong><a href="http://sh.st/4gb8Y" target="_blank" rel="noopener noreferrer">http://wiki.spipu.net/doku.php?id=html2pdf:en:v4:Accueil</a></p>
+<p><small><br>
+Tutorial membuat laporan pdf dengan php dan mysql, Tutorial membuat laporan pdf dengan php mysql dan html2pdf, Cara mudah membuat laporan pdf dengan php mysql dan html2pdf, Step by step membuat laporan pdf dengan php dan mysql, Step by step membuat laporan pdf dengan php mysql dan html2pdf<br>
+</small></p>
+<h2>Laporan PDF</h2>
+<div class="tptn_counter" id="tptn_counter_493">(Total : 26,168 viewers, 3 viewers today)</div>
+<div class="wp_rp_wrap  wp_rp_vertical" id="wp_rp_first"><div class="wp_rp_content"><h3 class="related_post_title">Catatan Lainnya</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-31" data-post-type="none"><a href="http://www.mynotescode.com/cara-membuat-laporan-pdf-dengan-codeigniter-dan-html2pdf/" class="wp_rp_thumbnail"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/PDF-150x150.png" alt="Cara Membuat Laporan PDF dengan Codeigniter dan Html2Pdf" width="150" height="150"></a><a href="http://www.mynotescode.com/cara-membuat-laporan-pdf-dengan-codeigniter-dan-html2pdf/" class="wp_rp_title">Cara Membuat Laporan PDF dengan Codeigniter dan Html2Pdf</a></li><li data-position="1" data-poid="in-538" data-post-type="none"><a href="http://www.mynotescode.com/cara-membuat-pencarian-data-dan-menampilkannya-ke-textbox-dengan-php-ajax-dan-mysql/" class="wp_rp_thumbnail"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/Search-150x150.png" alt="Cara Membuat Pencarian Data dan Menampilkannya ke Textbox dengan PHP AJAX dan MySQL" width="150" height="150"></a><a href="http://www.mynotescode.com/cara-membuat-pencarian-data-dan-menampilkannya-ke-textbox-dengan-php-ajax-dan-mysql/" class="wp_rp_title">Cara Membuat Pencarian Data dan Menampilkannya ke Textbox dengan PHP AJAX dan MySQL</a></li><li data-position="2" data-poid="in-78" data-post-type="none"><a href="http://www.mynotescode.com/cara-membuat-upload-gambar-dengan-php-dan-mysql/" class="wp_rp_thumbnail"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/Upload-150x150.png" alt="Cara Membuat Upload Gambar dengan PHP dan MySQL" width="150" height="150"></a><a href="http://www.mynotescode.com/cara-membuat-upload-gambar-dengan-php-dan-mysql/" class="wp_rp_title">Cara Membuat Upload Gambar dengan PHP dan MySQL</a></li><li data-position="3" data-poid="in-1349" data-post-type="none"><a href="http://www.mynotescode.com/cara-membuat-pencarian-tanpa-refresh-halaman-dengan-php-dan-ajax/" class="wp_rp_thumbnail"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/Search-Ajax-150x150.png" alt="Cara Membuat Pencarian Tanpa Refresh Halaman dengan PHP dan AJAX" width="150" height="150"></a><a href="http://www.mynotescode.com/cara-membuat-pencarian-tanpa-refresh-halaman-dengan-php-dan-ajax/" class="wp_rp_title">Cara Membuat Pencarian Tanpa Refresh Halaman dengan PHP dan AJAX</a></li></ul></div></div>
+<div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div><aside class="mashsb-container mashsb-main mashsb-stretched"><div class="mashsb-box"><div class="mashsb-count mash-large" style="float:left;"><div class="counts mashsbcount">15</div><span class="mashsb-sharetext">SHARES</span></div><div class="mashsb-buttons"><a class="mashicon-facebook mash-large mash-center mashsb-noshadow" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.mynotescode.com%2Fcara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql%2F" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Share</span></a><a class="mashicon-twitter mash-large mash-center mashsb-noshadow" href="https://twitter.com/intent/tweet?text=Cara%20Mudah%20Membuat%20Laporan%20PDF%20dengan%20PHP%20dan%20MySQL&amp;url=http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Tweet</span></a><div class="onoffswitch2 mash-large mashsb-noshadow" style="display:none;"></div></div>
+</div>
+<div style="clear:both;"></div><div class="mashsb-toggle-container"></div></aside>
+</div>
+</article>
+<div class="page-navigation">
+</div>
+<div class="kopa-tag-box">
+<span>Tags</span> <a href="http://www.mynotescode.com/tag/html2pdf/" rel="tag">HTML2PDF</a> <a href="http://www.mynotescode.com/tag/laporan-pdf/" rel="tag">Laporan PDF</a> <a href="http://www.mynotescode.com/tag/mysql/" rel="tag">MySQL</a> <a href="http://www.mynotescode.com/tag/php/" rel="tag">PHP</a> <a href="http://www.mynotescode.com/tag/report-pdf/" rel="tag">Report PDF</a> </div>
+
+<div class="kopa-author clearfix">
+<a class="author-thumb" href="http://www.mynotescode.com/author/rizaldimaulidia/"><img alt="cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(1)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=180&amp;d=mm&amp;r=g 2x" class="avatar avatar-90 photo" height="90" width="90"></a>
+<div class="author-content clearfix">
+<h4 class="author-name">ABOUT THE AUTHOR <a href="http://www.mynotescode.com/author/rizaldimaulidia/" title="Posts by Rizaldi Maulidia Achmad" rel="author">Rizaldi Maulidia Achmad</a></h4>
+<p>Interested in android programming, long time focused on web development. Visit My Profile Site at www.rizaldimaulidia.com</p>
+</div>
+</div>
+
+</div>
+</div>
+<div class="widget kopa-comment-form-widget">
+<h3 class="widget-title style3">
+POST YOUR COMMENTS <a rel="nofollow" id="cancel-comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/#respond" style="display:none;">(Cancel)</a> </h3>
+<div class="pd-20">
+<div class="comment-box">
+<form action="http://www.mynotescode.com/wp-comments-post.php" method="post" id="comments-form" class="clearfix" novalidate="novalidate">
+<p><i>Your email address will not be published. Required fields are marked *</i></p><div class="row"><div class="col-md-4 col-sm-4 col-xs-4"><p class="input-label">Name *</p><p class="input-block"><input id="comment_name" name="author" value="" type="text"></p></div>
+<div class="col-md-4 col-sm-4 col-xs-4"><p class="input-label">Email *</p><p class="input-block"><input id="comment_email" name="email" value="" type="email"></p></div>
+<div class="col-md-4 col-sm-4 col-xs-4"><p class="input-label">Website</p><p class="input-block"><input id="comment_url" type="text" name="url" value=""></p></div></div>
+<div class="fs-recaptcha-comments">
+<div id="fs_recaptcha_comments" style="transform:scale(0.9);-webkit-transform:scale(0.9);transform-origin:0 0;-webkit-transform-origin:0 0;"><div style="width: 304px; height: 78px;"><div><iframe src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/anchor.html" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+</div>
+<p class="textarea-block"><textarea value="" name="comment" id="comment_message" cols="88" rows="6"></textarea></p>
+<p class="comment-button clearfix">
+<span>
+<input type="submit" name="submit" value="Post Comment" id="submit-contact" class="input-submit">
+</span>
+<input type="hidden" name="comment_post_ID" value="493" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+</form>
+</div>
+</div>
+</div>
+<div id="comments">
+<h3>45 Comments</h3>
+<ol class="comments-list clearfix">
+<li id="comment-908" class="comment even thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/8bdf271ff207db3c4355c7886c99956a" srcset="http://2.gravatar.com/avatar/8bdf271ff207db3c4355c7886c99956a?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>andisumbayak</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Oct 3, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=908#respond" onclick="return addComment.moveForm( &quot;comment-908&quot;, &quot;908&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to andisumbayak">Reply</a>
+</div>
+</header>
+<p>klo mau menampilkan pdfnya ke dalam modal bootstrap gmn om?</p>
+</div>
+</article>
+</li>
+<li id="comment-903" class="comment odd alt thread-odd thread-alt depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/51d1e2e90c48a98ba9d369086b81a7e8" srcset="http://2.gravatar.com/avatar/51d1e2e90c48a98ba9d369086b81a7e8?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>ahmadrifan</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Oct 2, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=903#respond" onclick="return addComment.moveForm( &quot;comment-903&quot;, &quot;903&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to ahmadrifan">Reply</a>
+</div>
+</header>
+<p>TCPDF ERROR: Could not include font definition file: ‘glyphicons halflings’</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-906" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Oct 2, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=906#respond" onclick="return addComment.moveForm( &quot;comment-906&quot;, &quot;906&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>jangan pakai icon bootstrap om</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-899" class="comment odd alt thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<a href="http://alumnistie.pe.hu/">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/2c3b12a866e84eeabf0f1867e1b7a3e9" srcset="http://2.gravatar.com/avatar/2c3b12a866e84eeabf0f1867e1b7a3e9?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</a>
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4><a href="http://alumnistie.pe.hu/" rel="external nofollow" class="url">Febby Satryadi</a></h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Sep 28, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=899#respond" onclick="return addComment.moveForm( &quot;comment-899&quot;, &quot;899&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Febby Satryadi">Reply</a>
+</div>
+</header>
+<p>Notice: Undefined offset: 3 in C:\xampp\htdocs\eta\admin\laporan\html2pdf\html2pdf.class.php on line 2133</p>
+<p>Notice: Undefined offset: 3 in C:\xampp\htdocs\eta\admin\laporan\html2pdf\html2pdf.class.php on line 2156<br>
+TCPDF ERROR: Some data has already been output, can’t send PDF file</p>
+<p>Error kenapa tuh??</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-900" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Sep 28, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=900#respond" onclick="return addComment.moveForm( &quot;comment-900&quot;, &quot;900&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Coba kirimkan source code nya lewat fans page fb om. Biar saya bisa cek</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-895" class="comment odd alt thread-odd thread-alt depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/51d1e2e90c48a98ba9d369086b81a7e8" srcset="http://2.gravatar.com/avatar/51d1e2e90c48a98ba9d369086b81a7e8?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>ahmad rifan</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Sep 24, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=895#respond" onclick="return addComment.moveForm( &quot;comment-895&quot;, &quot;895&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to ahmad rifan">Reply</a>
+</div>
+</header>
+<p>error om.., TCPDF ERROR: Could not include font definition file: ‘glyphicons halflings’</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-896" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Sep 26, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=896#respond" onclick="return addComment.moveForm( &quot;comment-896&quot;, &quot;896&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>itu icon bootstrap ga akan bisa kebaca di HTML2PDF om</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-879" class="comment odd alt thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/1e2f4379272f65b3b79d2a73ff1a7e92" srcset="http://1.gravatar.com/avatar/1e2f4379272f65b3b79d2a73ff1a7e92?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizki Putra</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Sep 13, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=879#respond" onclick="return addComment.moveForm( &quot;comment-879&quot;, &quot;879&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizki Putra">Reply</a>
+</div>
+</header>
+<p>Terimakasih gan</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-880" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Sep 13, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=880#respond" onclick="return addComment.moveForm( &quot;comment-880&quot;, &quot;880&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Siap om <img draggable="false" class="emoji" alt="😀" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/1f600.svg"></p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-788" class="comment odd alt thread-odd thread-alt depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<a href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/www.qolila.com">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/350c4f38f1c1e5ec78a8441dde47cbe2" srcset="http://0.gravatar.com/avatar/350c4f38f1c1e5ec78a8441dde47cbe2?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</a>
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4><a href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/www.qolila.com" rel="external nofollow" class="url">syaifuddin Khan</a></h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Aug 10, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=788#respond" onclick="return addComment.moveForm( &quot;comment-788&quot;, &quot;788&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to syaifuddin Khan">Reply</a>
+</div>
+</header>
+<p>Mas gimana ya caranya mengatur lebar kolom<br>
+misal lebar kolom 1=5%, kolom 2=10%, kolom 3=7% misalkan….<br>
+biar bagus tampilannya</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-789" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Aug 10, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=789#respond" onclick="return addComment.moveForm( &quot;comment-789&quot;, &quot;789&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Setau saya dan dari pengalaman saya. Untuk html2pdf ini tidak bisa menggunakan persen untuk setting width kolom nya. Kalau mau pun langsung pakai pixel om. Pakai css saja, tambahkan skrip seperti berikut pada tag td nya :<br>
+style=”width: 100px;”</p>
+<p>100 disitu atur sesuai keinginan</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-904" class="comment odd alt depth-3 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/51d1e2e90c48a98ba9d369086b81a7e8" srcset="http://2.gravatar.com/avatar/51d1e2e90c48a98ba9d369086b81a7e8?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>ahmad rifan</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Oct 2, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=904#respond" onclick="return addComment.moveForm( &quot;comment-904&quot;, &quot;904&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to ahmad rifan">Reply</a>
+</div>
+</header>
+<p>Teryata :”v .</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-905" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-4 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Oct 2, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=905#respond" onclick="return addComment.moveForm( &quot;comment-905&quot;, &quot;905&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>ternyata apaan om? haha</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="comment-785" class="comment odd alt thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/6a9b31bb604d084b77611f55a2f508c9" srcset="http://0.gravatar.com/avatar/6a9b31bb604d084b77611f55a2f508c9?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>gopybermana</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Aug 8, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=785#respond" onclick="return addComment.moveForm( &quot;comment-785&quot;, &quot;785&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to gopybermana">Reply</a>
+</div>
+</header>
+<p>Mas..kok tidak bisa di extrak file pdf_php.7z nya ??<br>
+<img draggable="false" class="emoji" alt="🙂" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/1f642.svg"></p>
+</div>
+</article>
+</li>
+<li id="comment-783" class="comment even thread-odd thread-alt depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/3e95fc87c3841e8f1c8b58d91cb5a3cc" srcset="http://0.gravatar.com/avatar/3e95fc87c3841e8f1c8b58d91cb5a3cc?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Andhika99</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Aug 6, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=783#respond" onclick="return addComment.moveForm( &quot;comment-783&quot;, &quot;783&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Andhika99">Reply</a>
+</div>
+</header>
+<p>berhasil gan, tetapi kuk ada beberapa tampilan yang gak sesuai dengan format htmlnya ya? contoh ukuran gambar, alignment jadi rata kiri. dan ukuran font. ada saran gan?</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-784" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Aug 6, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=784#respond" onclick="return addComment.moveForm( &quot;comment-784&quot;, &quot;784&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Alignment justify harusnya bisa. Ukuran font pun bisa. Itu pakai css kan? Soalnya di html2pdf tidak semua di dukung om</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-755" class="comment even thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<a href="http://afiffudin.tk/">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/a93334d4ec1d035c102ee9670108766f" srcset="http://1.gravatar.com/avatar/a93334d4ec1d035c102ee9670108766f?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</a>
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4><a href="http://afiffudin.tk/" rel="external nofollow" class="url">afif fudin</a></h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Aug 2, 2017</span>
+ </div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=755#respond" onclick="return addComment.moveForm( &quot;comment-755&quot;, &quot;755&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to afif fudin">Reply</a>
+</div>
+</header>
+<p>Warning: Cannot modify header information – headers already sent by (output started at C:\xampp\htdocs\dinas\home-user.php:116) in C:\xampp\htdocs\dinas\html2pdf\_tcpdf_5.0.002\tcpdf.php on line 6141<br>
+TCPDF ERROR: Some data has already been output to browser, can’t send PDF file</p>
+<p>solusinya ini bagaimana min ?</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-757" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Aug 2, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=757#respond" onclick="return addComment.moveForm( &quot;comment-757&quot;, &quot;757&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Itu errornya karena ada karakter sebelum skrip ob_start()<br>
+pokoknya semua hal yang akan di munculkan harus di simpan di antara ob_start()</p>
+<p>coba kirimkan source nya. Biar saya cek. Kirim via fans page fb</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-738" class="comment even thread-odd thread-alt depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/58ca980a486c976fc33b5fd83e63a564" srcset="http://2.gravatar.com/avatar/58ca980a486c976fc33b5fd83e63a564?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>ciptania</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 26, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=738#respond" onclick="return addComment.moveForm( &quot;comment-738&quot;, &quot;738&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to ciptania">Reply</a>
+</div>
+</header>
+<p>TCPDF ERROR: Some data has already been output, can’t send PDF file<br>
+kalo error nya kayak gituh, kenapa yah ?</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-739" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 26, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=739#respond" onclick="return addComment.moveForm( &quot;comment-739&quot;, &quot;739&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Error itu karena ada output yg keluar. Coba kirimkan source code nya lewat fans page kami mba. Biar saya bisa cek kesalahannya dimana</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-730" class="comment even thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/5219455a95805978fd48937e284fff1b" srcset="http://2.gravatar.com/avatar/5219455a95805978fd48937e284fff1b?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Alfian Darmawan</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 25, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=730#respond" onclick="return addComment.moveForm( &quot;comment-730&quot;, &quot;730&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Alfian Darmawan">Reply</a>
+</div>
+</header>
+<p>arning: require_once(html2pdf/html2pdf.php): failed to open stream: No such file or directory in C:\xampp\htdocs\kp\admin\print.php on line 57</p>
+<p>Fatal error: require_once(): Failed opening required ‘html2pdf/html2pdf.php’ (include_path=’C:\xampp\php\PEAR’) in C:\xampp\htdocs\kp\admin\print.php on line 57</p>
+<p>min ini kenapa yah ?</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-731" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 25, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=731#respond" onclick="return addComment.moveForm( &quot;comment-731&quot;, &quot;731&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>step 1 nya udah dilakukan belum om? itu errornya karena tidak bisa menemukan folder html2pdf nya. coba ikutin step 1 sampai selesai</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-732" class="comment even depth-3 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/5219455a95805978fd48937e284fff1b" srcset="http://2.gravatar.com/avatar/5219455a95805978fd48937e284fff1b?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Alfian Darmawan</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 25, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=732#respond" onclick="return addComment.moveForm( &quot;comment-732&quot;, &quot;732&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Alfian Darmawan">Reply</a>
+</div>
+</header>
+<p>sudah min masih ttp gabisa</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-733" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-4 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 25, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=733#respond" onclick="return addComment.moveForm( &quot;comment-733&quot;, &quot;733&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>coba kirim source code nya ke saya. biar saya cek. kirim via fans page fb kami.</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-734" class="comment even depth-3 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/5219455a95805978fd48937e284fff1b" srcset="http://2.gravatar.com/avatar/5219455a95805978fd48937e284fff1b?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Alfian Darmawan</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 25, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=734#respond" onclick="return addComment.moveForm( &quot;comment-734&quot;, &quot;734&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Alfian Darmawan">Reply</a>
+</div>
+</header>
+<p>min ada no wa ?</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-735" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-4 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 25, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=735#respond" onclick="return addComment.moveForm( &quot;comment-735&quot;, &quot;735&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>lewat fb aja om hehe -&gt; <a href="http://www.facebook.com/mynotescode" rel="nofollow">http://www.facebook.com/mynotescode</a></p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="comment-709" class="comment even thread-odd thread-alt depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/e131e3c1532fc38907bca3c6a3b6d06f" srcset="http://2.gravatar.com/avatar/e131e3c1532fc38907bca3c6a3b6d06f?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>deviandista</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 21, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=709#respond" onclick="return addComment.moveForm( &quot;comment-709&quot;, &quot;709&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to deviandista">Reply</a>
+</div>
+</header>
+<p>mas, aku udh coba dilocalhost dan berhasil buat cetak pdf. tapi waktu dijalankan melalui hosting gak bisa.kenapa ya?</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-710" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 22, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=710#respond" onclick="return addComment.moveForm( &quot;comment-710&quot;, &quot;710&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Apa ada error yang muncul? Apa errornya?</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-723" class="comment even depth-3 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/e131e3c1532fc38907bca3c6a3b6d06f" srcset="http://2.gravatar.com/avatar/e131e3c1532fc38907bca3c6a3b6d06f?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>deviandista</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 24, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=723#respond" onclick="return addComment.moveForm( &quot;comment-723&quot;, &quot;723&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to deviandista">Reply</a>
+</div>
+</header>
+<p>This page isn’t working</p>
+<p>larijava.000webhostapp.com is currently unable to handle this request.<br>
+HTTP ERROR 500</p>
+<p>itu mas,error 500 waktu di hosting</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-724" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-4 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+ </div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 24, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=724#respond" onclick="return addComment.moveForm( &quot;comment-724&quot;, &quot;724&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>coba kontak admin dari pihak hostingnya mba. seharusnya kalau di local jalan, di hosting pun tidak masalah.</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-725" class="comment even depth-5 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/e131e3c1532fc38907bca3c6a3b6d06f" srcset="http://2.gravatar.com/avatar/e131e3c1532fc38907bca3c6a3b6d06f?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>deviandista</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 24, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+</div>
+</header>
+<p>ok, makasih mas</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="comment-697" class="comment odd alt thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/f579804985c4f01dfb810801ce5ca3fd" srcset="http://0.gravatar.com/avatar/f579804985c4f01dfb810801ce5ca3fd?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>ana Minaha</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 19, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=697#respond" onclick="return addComment.moveForm( &quot;comment-697&quot;, &quot;697&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to ana Minaha">Reply</a>
+</div>
+</header>
+<p>kalo laporan yang berbentuk seperti microsoft word pake php atau html bisa gk ya?</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-698" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 19, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=698#respond" onclick="return addComment.moveForm( &quot;comment-698&quot;, &quot;698&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Sangat bisa mba. Kebetulan tutorial untuk export ke word ada dalam list tutorial yang akan kami buat hehe</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-655" class="comment odd alt thread-odd thread-alt depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/48ce37f73ada385056b3388f2d174f7a" srcset="http://1.gravatar.com/avatar/48ce37f73ada385056b3388f2d174f7a?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>zaini jay</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 7, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=655#respond" onclick="return addComment.moveForm( &quot;comment-655&quot;, &quot;655&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to zaini jay">Reply</a>
+</div>
+</header>
+<p>oh iya sudah bisa om ada kesalahan dikit di bagian script yang harus nya tidak di buat hehe makasih ya ilmu nya</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-657" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 7, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=657#respond" onclick="return addComment.moveForm( &quot;comment-657&quot;, &quot;657&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>sip om. sama-sama om, senang bisa membantu <img draggable="false" class="emoji" alt="😀" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/1f600.svg"></p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-650" class="comment odd alt thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/48ce37f73ada385056b3388f2d174f7a" srcset="http://1.gravatar.com/avatar/48ce37f73ada385056b3388f2d174f7a?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>zaini jay</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 7, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=650#respond" onclick="return addComment.moveForm( &quot;comment-650&quot;, &quot;650&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to zaini jay">Reply</a>
+</div>
+</header>
+<p>mf mau nanya ini masalah nya di mana ya?</p>
+<p>Fatal error: Uncaught ERROR nÂ°4File : C:\xampp\htdocs\projek\html2pdf\_class\parsingHtml.class.phpLine : 119HTML code invalid, the tags are not closed in an orderly fashion.Status : Array ( [0] =&gt; page [1] =&gt; table [2] =&gt; tr [3] =&gt; th [4] =&gt; a [5] =&gt; font ) HTML : …&gt;&lt;font color=black&gt;Tambah Data&lt;/a&gt;&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td p align=… thrown in C:\xampp\htdocs\projek\html2pdf\_class\parsingHtml.class.php on line 119</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-652" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 7, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=652#respond" onclick="return addComment.moveForm( &quot;comment-652&quot;, &quot;652&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Itu karena ada tag html yg belum di tutup om. Coba periksa kembali dengan teliti</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-653" class="comment odd alt depth-3 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/48ce37f73ada385056b3388f2d174f7a" srcset="http://1.gravatar.com/avatar/48ce37f73ada385056b3388f2d174f7a?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>zaini jay</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 7, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=653#respond" onclick="return addComment.moveForm( &quot;comment-653&quot;, &quot;653&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to zaini jay">Reply</a>
+</div>
+</header>
+<p>tag html yg di proses file print.php atau di file parsingHtml.class.php nya om</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-654" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-4 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jul 7, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=654#respond" onclick="return addComment.moveForm( &quot;comment-654&quot;, &quot;654&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>Yang di proses print.php om</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="comment-629" class="comment odd alt thread-odd thread-alt depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<a href="http://dasadarmatrisatya.blogspot.com/">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/4f3504845504acb38823bdc9d0169015" srcset="http://1.gravatar.com/avatar/4f3504845504acb38823bdc9d0169015?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</a>
+ </div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4><a href="http://dasadarmatrisatya.blogspot.com/" rel="external nofollow" class="url">alif nur</a></h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jun 21, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=629#respond" onclick="return addComment.moveForm( &quot;comment-629&quot;, &quot;629&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to alif nur">Reply</a>
+</div>
+</header>
+<p>Masss Pass kucoba error :<br>
+‘Warning: mysql_fetch_array() expects parameter 1 to be resource, boolean given in E:\xampp\htdocs\pdf_php\dataPasar.php on line 85’<br>
+mohon bantuannya mas…</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-630" class="comment byuser comment-author-rizaldimaulidia bypostauthor even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jun 21, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=630#respond" onclick="return addComment.moveForm( &quot;comment-630&quot;, &quot;630&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>dalam tutorial yang saya buat bukan pakai “mysql_fetch_array” om. tapi pakai “mysqli_fetch_array”. harap periksa kembali kode nya dengan teliti. jika masih ada error kabari saya lagi om.<br>
+Maaf baru bales</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+<li id="comment-612" class="comment odd alt thread-even depth-1 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/6750494d6d4cd9e2c2c448464004004b" srcset="http://0.gravatar.com/avatar/6750494d6d4cd9e2c2c448464004004b?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Andhikaelfriza</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jun 12, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=612#respond" onclick="return addComment.moveForm( &quot;comment-612&quot;, &quot;612&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Andhikaelfriza">Reply</a> 
+</div>
+</header>
+<p>Kalo cuma berdasarkan nilai aja gimana?<br>
+Jadi gak semuanya</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-613" class="comment even depth-2 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/6750494d6d4cd9e2c2c448464004004b" srcset="http://0.gravatar.com/avatar/6750494d6d4cd9e2c2c448464004004b?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Andhikaelfriza</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jun 12, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=613#respond" onclick="return addComment.moveForm( &quot;comment-613&quot;, &quot;613&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Andhikaelfriza">Reply</a>
+</div>
+</header>
+<p>Berdasarkan nim maksudnya</p>
+</div>
+</article>
+<ul class="children">
+<li id="comment-616" class="comment byuser comment-author-rizaldimaulidia bypostauthor odd alt depth-3 comment clearfix">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/fd856310ee3906bcaa147fb0259d6b7d(2)" srcset="http://0.gravatar.com/avatar/fd856310ee3906bcaa147fb0259d6b7d?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Rizaldi Maulidia Achmad</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Jun 13, 2017</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+<a rel="nofollow" class="comment-reply-link" href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/?replytocom=616#respond" onclick="return addComment.moveForm( &quot;comment-616&quot;, &quot;616&quot;, &quot;respond&quot;, &quot;493&quot; )" aria-label="Reply to Rizaldi Maulidia Achmad">Reply</a>
+</div>
+</header>
+<p>bisa saja om. tinggal ubah link print nya jadi seperti ini :<br>
+&lt;a href="print.php?nim=12345678"&gt;Cetak Data&lt;/a&gt;</p>
+<p>jadi kirim nim nya melalui URL. nanti pada proses cetak PDF nya. ubah query ini :<br>
+$query = “SELECT * FROM siswa”;</p>
+<p>menjadi seperti ini:<br>
+$query = “SELECT * FROM siswa WHERE nim='”.$_GET[‘nim’].”‘”;</p>
+<p>kurang lebih seperti itu gambarannya. maaf baru bisa balas sekarang om</p>
+</div>
+</article>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="comment-166" class="pingback even thread-odd thread-alt depth-1 comment">
+<article class="comment-wrap clearfix">
+<div class="comment-avatar">
+<a href="https://mynotescode.wordpress.com/2016/09/22/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/">
+<img alt="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/saved_resource" srcset="http://0.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo avatar-default" height="50" width="50">
+</a>
+</div>
+<div class="media-body clearfix">
+<header class="clearfix">
+<div class="pull-left">
+<h4>Pingback</h4>
+<div class="entry-meta">
+<span class="entry-date"><i class="fa fa-clock-o"></i>Oct 30, 2016</span>
+</div>
+</div>
+<div class="comment-button pull-right">
+</div>
+</header>
+<p><a href="https://mynotescode.wordpress.com/2016/09/22/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/" target="_blank" title="Pingback">https://mynotescode.wordpress.com/2016/09/22/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/</a></p>
+</div>
+</article>
+</li>
+
+</ol>
+</div>
+</div>
+
+<div class="sidebar"><div class="ad-mag-right-sb q2w3-fixed-widget-container" style="height: 2495px;"><div id="text-2" class="widget widget_text">
+<div class="textwidget">
+
+<ins class="adsbygoogle adslot_sidebar" data-ad-client="ca-pub-9915705992307354" data-ad-slot="7802930423" data-ad-format="auto" data-adsbygoogle-status="done" style="height: 600px;"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:260px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:260px;background-color:transparent;"><iframe width="260" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;width:260px;height:600px;" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/saved_resource(3).html"></iframe></ins></ins></ins>
+<script async="" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/adsbygoogle.js.download"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="widget_tptn_pop-2" class="widget widget_widget_tptn_pop"><h3 class="widget-title style2">POPULAR NOTES</h3><div class="tptn_posts  tptn_posts_widget tptn_posts_widget2"><ul><li><a href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/" class="tptn_link"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/PDF-75x75.png" alt="Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL" title="Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL" width="50" height="50" class="tptn_thumb tptn_featured"></a><span class="tptn_after_thumb"><a href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/" class="tptn_link"><span class="tptn_title">Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL</span></a></span></li><li><a href="http://www.mynotescode.com/cara-membuat-crud-plus-upload-gambar-dengan-php-dan-mysql/" class="tptn_link"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/CRUD-75x75.png" alt="Cara Membuat CRUD Plus Upload Gambar dengan PHP dan MySQL" title="Cara Membuat CRUD Plus Upload Gambar dengan PHP dan MySQL" width="50" height="50" class="tptn_thumb tptn_featured"></a><span class="tptn_after_thumb"><a href="http://www.mynotescode.com/cara-membuat-crud-plus-upload-gambar-dengan-php-dan-mysql/" class="tptn_link"><span class="tptn_title">Cara Membuat CRUD Plus Upload Gambar dengan PHP dan MySQL</span></a></span></li><li><a href="http://www.mynotescode.com/cara-membuat-upload-gambar-dengan-php-dan-mysql/" class="tptn_link"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/Upload-75x75.png" alt="Cara Membuat Upload Gambar dengan PHP dan MySQL" title="Cara Membuat Upload Gambar dengan PHP dan MySQL" width="50" height="50" class="tptn_thumb tptn_featured"></a><span class="tptn_after_thumb"><a href="http://www.mynotescode.com/cara-membuat-upload-gambar-dengan-php-dan-mysql/" class="tptn_link"><span class="tptn_title">Cara Membuat Upload Gambar dengan PHP dan MySQL</span></a></span></li><li><a href="http://www.mynotescode.com/cara-membuat-import-data-excel-dengan-php-dan-mysql/" class="tptn_link"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/Import-PHP-My-Notes-Code-75x75.png" alt="Cara Membuat Import Data Excel dengan PHP dan MySQL" title="Cara Membuat Import Data Excel dengan PHP dan MySQL" width="50" height="50" class="tptn_thumb tptn_featured"></a><span class="tptn_after_thumb"><a href="http://www.mynotescode.com/cara-membuat-import-data-excel-dengan-php-dan-mysql/" class="tptn_link"><span class="tptn_title">Cara Membuat Import Data Excel dengan PHP dan MySQL</span></a></span></li><li><a href="http://www.mynotescode.com/cara-membuat-crud-plus-upload-gambar-dengan-php-ajax-bootstrap/" class="tptn_link"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/CRUD-AJAX-75x75.png" alt="Cara Membuat CRUD Plus Upload Gambar dengan PHP AJAX Bootstrap" title="Cara Membuat CRUD Plus Upload Gambar dengan PHP AJAX Bootstrap" width="50" height="50" class="tptn_thumb tptn_featured"></a><span class="tptn_after_thumb"><a href="http://www.mynotescode.com/cara-membuat-crud-plus-upload-gambar-dengan-php-ajax-bootstrap/" class="tptn_link"><span class="tptn_title">Cara Membuat CRUD Plus Upload Gambar dengan PHP AJAX…</span></a></span></li></ul><div class="tptn_clear"></div></div></div><div id="categories-2" class="widget widget_categories"><h3 class="widget-title style2">NOTE CATEGORIES</h3> <ul>
+<li class="cat-item cat-item-4"><a href="http://www.mynotescode.com/category/codeigniter/">Codeigniter</a> (8)
+</li>
+<li class="cat-item cat-item-5"><a href="http://www.mynotescode.com/category/gammu/">Gammu</a> (1)
+</li>
+<li class="cat-item cat-item-55"><a href="http://www.mynotescode.com/category/jquery/">JQuery</a> (1)
+</li>
+<li class="cat-item cat-item-6"><a href="http://www.mynotescode.com/category/laravel/">Laravel</a> (1)
+</li>
+<li class="cat-item cat-item-64"><a href="http://www.mynotescode.com/category/pascal/">Pascal</a> (1)
+</li>
+<li class="cat-item cat-item-7"><a href="http://www.mynotescode.com/category/php/">PHP</a> (18)
+</li>
+<li class="cat-item cat-item-44"><a href="http://www.mynotescode.com/category/tips-and-trick/">Tips and Trick</a> (8)
+</li>
+</ul>
+</div><div id="archives-3" class="widget widget_archive"><h3 class="widget-title style2">NOTE ARCHIVES</h3> <label class="screen-reader-text" for="archives-dropdown-3">NOTE ARCHIVES</label>
+<select id="archives-dropdown-3" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+<option value="">Select Month</option>
+<option value="http://www.mynotescode.com/2017/11/"> November 2017 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2017/10/"> October 2017 &nbsp;(3)</option>
+<option value="http://www.mynotescode.com/2017/09/"> September 2017 &nbsp;(2)</option>
+<option value="http://www.mynotescode.com/2017/08/"> August 2017 &nbsp;(3)</option>
+<option value="http://www.mynotescode.com/2017/07/"> July 2017 &nbsp;(3)</option>
+<option value="http://www.mynotescode.com/2017/06/"> June 2017 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2017/05/"> May 2017 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2017/04/"> April 2017 &nbsp;(2)</option>
+<option value="http://www.mynotescode.com/2017/03/"> March 2017 &nbsp;(2)</option>
+<option value="http://www.mynotescode.com/2016/12/"> December 2016 &nbsp;(2)</option>
+<option value="http://www.mynotescode.com/2016/11/"> November 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2016/10/"> October 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2016/08/"> August 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2016/05/"> May 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2015/12/"> December 2015 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2015/11/"> November 2015 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2015/06/"> June 2015 &nbsp;(3)</option>
+</select>
+</div><div id="text-8" class="widget widget_text"> <div class="textwidget"><div style="text-align: center;"><a href="http://www.dmca.com/Protection/Status.aspx?ID=4fb7ca25-cd0c-4cca-922c-885eb6781dde&amp;refurl=http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/" title="DMCA.com Protection Status" class="dmca-badge"> <img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/DMCA_logo-std-btn225w.png" alt="DMCA.com Protection Status"></a> <script src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/DMCABadgeHelper.min.js.download"> </script>
+<hr>
+Apabila Anda ingin meng-copy Tutorial yang ada di blog ini dan mem-publish nya kembali di blog Anda sendiri, Harap untuk Mencantumkan Link Sumber dari blog ini. Terimakasih atas kerjasamanya.<br>
+<b>Happy Coding ^_^</b>
+</div></div>
+</div> <div id="recent-posts-2_clone" class="widget widget_recent_entries q2w3-widget-clone-right-sidebar" style="top: 10px; width: inherit; height: 571px; visibility: hidden;">  
+</div><div id="recent-posts-2" class="widget widget_recent_entries" style="top: 10px; width: inherit; position: fixed;"> <h3 class="widget-title style2">NEW NOTES</h3> <ul>
+<li>
+<a href="http://www.mynotescode.com/chained-dropdown-dengan-codeigniter/">Cara Simpel Membuat Chained Dropdown dengan Codeigniter dan MySQL</a>
+</li>
+<li>
+<a href="http://www.mynotescode.com/export-excel-dengan-phpexcel-codeigniter/">Cara Membuat Export Data Ke Excel Dengan PHPExcel dan Codeigniter</a>
+</li>
+<li>
+<a href="http://www.mynotescode.com/export-excel-tanpa-plugin-codeigniter/">Cara Mudah Membuat Export Excel Tanpa Plugin dengan Codeigniter</a>
+</li>
+<li>
+<a href="http://www.mynotescode.com/upload-gambar-tanpa-refresh-codeigniter/">Cara Mudah Membuat Upload Gambar Tanpa Refresh dengan Codeigniter</a>
+</li>
+<li>
+<a href="http://www.mynotescode.com/upload-gambar-dengan-codeigniter/">Cara Membuat Upload Gambar dengan Codeigniter dan MySQL</a>
+</li>
+<li>
+<a href="http://www.mynotescode.com/crud-dengan-codeigniter-dan-mysql/">Cara Mudah Membuat CRUD dengan Codeigniter dan MySQL</a>
+</li>
+<li>
+<a href="http://www.mynotescode.com/pencarian-plus-pagination-php/">Cara Membuat Pencarian Plus Pagination Tanpa Refresh dengan PHP</a>
+</li>
+</ul>
+</div> </div></div>
+</div>
+
+</div>
+
+</div>
+
+<div id="bottom-sidebar">
+<div class="wrapper">
+<div class="bottom-area-1">
+<a href="http://www.mynotescode.com/cara-mudah-membuat-laporan-pdf-dengan-php-dan-mysql/#" class="scrollup"><span class="fa fa-chevron-up"></span></a>
+</div>
+
+<div class="bottom-area-2">
+<div class="widget-area-1" style="height: 478px;"><div id="text-6" class="widget widget_text"> <div class="textwidget"><div style="text-align: center;">
+<img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/cropped-My-Notes-Code-Logo-180x180.png" width="80" height="80" alt="My Notes Code - The Notes of Programmer">
+<div style="font-size: 20px;"><b>My Notes Code</b></div>
+The Notes of Programmer
+</div>
+<div style="margin-top: -10px;border-bottom: 4px solid orange;">&nbsp;</div>
+<div style="padding: 10px 10px 10px 5px;border-bottom: 1px dotted #878080;">
+<a href="http://www.mynotescode.com/sitemap_index.xml"><i class="fa fa-sitemap"></i> &nbsp;Sitemap</a>
+</div>
+<div style="padding: 10px 10px 10px 5px;border-bottom: 1px dotted #878080;">
+<a href="http://www.mynotescode.com/privacy-policy"><i class="fa fa-lock"></i> &nbsp;Privacy Policy</a>
+</div>
+<div style="padding: 10px 10px 10px 5px;border-bottom: 1px dotted #878080;">
+<a href="http://www.mynotescode.com/terms-of-service"><i class="fa fa-file-text-o"></i> &nbsp;Terms of Service</a>
+</div>
+<div style="padding: 10px 10px 10px 5px;border-bottom: 1px dotted #878080;">
+<a href="http://www.mynotescode.com/disclaimer"><i class="fa fa-exclamation-circle"></i> &nbsp;Disclaimer</a>
+</div>
+<div style="padding: 10px 10px 10px 5px;border-bottom: 1px dotted #878080;">
+<a href="http://www.mynotescode.com/contact"><i class="fa fa-phone-square"></i> &nbsp;Contact</a>
+</div>
+<div style="padding: 10px 10px 10px 5px;border-bottom: 1px dotted #878080;">
+<a href="http://www.mynotescode.com/about"><i class="fa fa-info-circle"></i> &nbsp;About</a>
+</div></div>
+</div></div>
+<div class="widget-area-3" style="height: 478px;"><div id="categories-3" class="widget widget_categories"><h3 class="widget-title style2">NOTE CATEGORIES</h3> <ul>
+<li class="cat-item cat-item-4"><a href="http://www.mynotescode.com/category/codeigniter/">Codeigniter</a>
+</li>
+<li class="cat-item cat-item-5"><a href="http://www.mynotescode.com/category/gammu/">Gammu</a>
+</li>
+<li class="cat-item cat-item-55"><a href="http://www.mynotescode.com/category/jquery/">JQuery</a>
+</li>
+<li class="cat-item cat-item-6"><a href="http://www.mynotescode.com/category/laravel/">Laravel</a>
+</li>
+<li class="cat-item cat-item-64"><a href="http://www.mynotescode.com/category/pascal/">Pascal</a>
+</li>
+<li class="cat-item cat-item-7"><a href="http://www.mynotescode.com/category/php/">PHP</a>
+</li>
+<li class="cat-item cat-item-44"><a href="http://www.mynotescode.com/category/tips-and-trick/">Tips and Trick</a>
+</li>
+</ul>
+</div></div>
+<div class="widget-area-4" style="height: 478px;"><div id="archives-2" class="widget widget_archive"><h3 class="widget-title style2">NOTE ARCHIVES</h3> <label class="screen-reader-text" for="archives-dropdown-2">NOTE ARCHIVES</label>
+<select id="archives-dropdown-2" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+<option value="">Select Month</option>
+<option value="http://www.mynotescode.com/2017/11/"> November 2017 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2017/10/"> October 2017 &nbsp;(3)</option>
+<option value="http://www.mynotescode.com/2017/09/"> September 2017 &nbsp;(2)</option>
+<option value="http://www.mynotescode.com/2017/08/"> August 2017 &nbsp;(3)</option>
+<option value="http://www.mynotescode.com/2017/07/"> July 2017 &nbsp;(3)</option>
+<option value="http://www.mynotescode.com/2017/06/"> June 2017 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2017/05/"> May 2017 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2017/04/"> April 2017 &nbsp;(2)</option>
+<option value="http://www.mynotescode.com/2017/03/"> March 2017 &nbsp;(2)</option>
+<option value="http://www.mynotescode.com/2016/12/"> December 2016 &nbsp;(2)</option>
+<option value="http://www.mynotescode.com/2016/11/"> November 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2016/10/"> October 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2016/08/"> August 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2016/05/"> May 2016 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2015/12/"> December 2015 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2015/11/"> November 2015 &nbsp;(1)</option>
+<option value="http://www.mynotescode.com/2015/06/"> June 2015 &nbsp;(3)</option>
+</select>
+</div></div>
+</div>
+
+</div>
+
+</div>
+
+<footer id="kopa-footer">
+<div class="wrapper clearfix">
+<p id="copyright" class="">Copyright © 2017 My Notes Code</p>
+</div>
+
+</footer>
+
+<input type="hidden" id="ad_mag_lite_load_more_blog_3_wpnonce" name="ad_mag_lite_load_more_blog_3_wpnonce" value="b9ee3a9ef3"><input type="hidden" id="ad_mag_lite_load_more_blog_2_wpnonce" name="ad_mag_lite_load_more_blog_2_wpnonce" value="90ad941d53">
+
+<script type="text/javascript">
+var fs_recaptcha_comments;
+var fsReCAPTCHA = function() {
+// render all collected Fast Secure reCAPTCHA instances
+// note if you have other recaptcha plugins, one of the plugins might not load any recaptchas
+// however this plugin is compatible with the recaptcha on Fast Secure Contact Form plugin
+fs_recaptcha_comments = grecaptcha.render('fs_recaptcha_comments', {'sitekey' : '6LcXLQsUAAAAADRtMXE_SMkW7NQoKXKrWvDDf2eO', 'size' : 'normal', 'theme' : 'light'});
+};
+
+</script>
+
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/modernizr.custom.js.download"></script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/bootstrap.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ad_mag_lite_custom_front_localization = {"url":{"template_directory_uri":"http:\/\/www.mynotescode.com\/wp-content\/themes\/ad-mag-lite"},"validate":{"form":{"submit":"SEND","sending":"SENDING..."},"name":{"required":"Please enter your name.","minlength":"At least {0} characters required."},"email":{"required":"Please enter your email.","email":"Please enter a valid email."},"comment":{"required":"Please enter a comment.","minlength":"At least {0} characters required."},"message":{"required":"Please enter a message.","minlength":"At least {0} characters required."}},"ajax":{"url":"http:\/\/www.mynotescode.com\/wp-admin\/admin-ajax.php"},"sticky_menu":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/custom.js.download"></script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/easypaginate.js.download"></script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/comment-reply.min.js.download"></script>
+<script type="text/javascript">
+var q2w3_sidebar_options = new Array();
+q2w3_sidebar_options[0] = { "sidebar" : "right-sidebar", "margin_top" : 10, "margin_bottom" : 0, "stop_id" : "", "screen_max_width" : 0, "screen_max_height" : 0, "width_inherit" : true, "refresh_interval" : 1500, "window_load_hook" : false, "disable_mo_api" : false, "widgets" : ['recent-posts-2'] };
+</script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/q2w3-fixed-widget.min.js.download"></script>
+<script type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/wp-embed.min.js.download"></script>
+<script async="" defer="" type="text/javascript" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/api.js.download"></script>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582HVlH3eBnL31m1CqGI4AtpVSx8sT%2bdOUHU4wtgN1zJGgfm%2fNXCd4etS43bR0b6PBexRS%2fotI8UaB0qFGqdOWFEIyGVNNI0q916uATLtaJ7Y0wJujCRlGCxXTqacLskBIGTV7X9WbLr954%2f5El9d%2f%2bKM28ixvYGQi%2fZ8lH8UEKsX5X0khVV0FGWJBghRyCt6iQq7lh5dQ7l3YTQSxDDs4%2fUk5Hg0vWb2V%2beGASP%2b%2bVqJS8%2brAyRWxO26u6Qa%2fSsVCGDK%2fo2Q%2f13nRXOk3b0RnLtSFaTISppJMVTzdS%2f5hcSzrpsPgHsYhjPKa9dl7lmGUcQI%2bQscBPvbEYoJa8CSEkW9nlRJFF0kP3FDUftuheHH5QVF63nhPVuvUfVsn7qNvxKXWa2htC4UftnJlNg3%2bq%2fzRYLwSUjQNpMw8I6xDXuTVEy7%2bU7lKvcpTsJUVgs4ONNSFwMszkOC5LOLx9w9DY4vjMbnibBSx3a2CRS0CRVAnLjm4JH8Md0uSU1vxn2Sjc%2b726i42EP3HzRv7Adv8uTU%2bNId4Fwm8yZqN%2fLMXNh5bDOZqOuyYHvqcH3JYM01MjHSoQJmt%2fJWET%2bE8ramtNMUWMsEacaSGb7GNFAKcNmUH5Hmo4SSYxxk%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script>
+
+<ins class="adsbygoogle" data-adsbygoogle-status="done" style="display: none; width: auto; height: auto;"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe width="0" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;width:0px;height:0px;" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/saved_resource(4).html"></iframe></ins></ins></ins><div id="beacon_440976637" style="position:absolute;left:0;top:0;display:none"><img src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/log.html" width="0" height="0" style="width:0px;height:0px"></div><div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="./Cara Mudah Membuat Laporan PDF dengan PHP dan MySQL_files/bframe.html" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="27qzq8gy0xqy" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
